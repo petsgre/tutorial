@@ -16,3 +16,4 @@
 ------------
 1. [chrome神插件之：SwitchyOmega的安装设置](https://www.cnblogs.com/LyndonMario/p/9326176.html) 
 2. [使用SwitchyOmega设置Chrome代理](https://blog.csdn.net/qq_31851531/article/details/78410146) 
+3. [怎么使用谷歌搜索之XX-NET和SwitchyOmega推荐使用](https://blog.csdn.net/csuzhaoqinghui/article/details/53391848) 一种新的科学上网方式？没试验过
