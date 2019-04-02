@@ -14,4 +14,5 @@
 
 科学上网：
 ------------
-1. [proxy switchyomega使用方法](https://www.cnblogs.com/LyndonMario/p/9326176.html) 
+1. [chrome神插件之：SwitchyOmega的安装设置](https://www.cnblogs.com/LyndonMario/p/9326176.html) 
+2. [使用SwitchyOmega设置Chrome代理](https://blog.csdn.net/qq_31851531/article/details/78410146) 
