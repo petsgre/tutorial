@@ -1,5 +1,5 @@
 # tutorial
-记录平时开发过程中的各种教程
+记录平时开发过程中的各种教程和使用方法
 
 
 数据库：
@@ -10,3 +10,8 @@
 项目工具：
 ------------
 1. [microsoft project 2010激活教程/方法](https://jingyan.baidu.com/article/27fa73265206c446f9271f42.html) 
+
+
+科学上网：
+------------
+1. [proxy switchyomega使用方法](https://www.cnblogs.com/LyndonMario/p/9326176.html) 
