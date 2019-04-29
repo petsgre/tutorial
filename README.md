@@ -18,3 +18,8 @@
 2. [使用SwitchyOmega设置Chrome代理](https://blog.csdn.net/qq_31851531/article/details/78410146) 
 3. [怎么使用谷歌搜索之XX-NET和SwitchyOmega推荐使用](https://blog.csdn.net/csuzhaoqinghui/article/details/53391848) 一种新的科学上网方式？没试验过
 4. [Potatso Lite下载及使用教程](https://ssr.tools/125)
+
+
+虚拟机：
+------------
+1. [VMware 15 安装 MAC OS 10.13 原版（详细图文教程）](https://blog.csdn.net/ztx114/article/details/86133295) 
