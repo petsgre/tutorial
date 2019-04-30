@@ -23,3 +23,7 @@
 虚拟机：
 ------------
 1. [VMware 15 安装 MAC OS 10.13 原版（详细图文教程）](https://blog.csdn.net/ztx114/article/details/86133295) 
+
+服务器：
+------------
+1. [CentOS安装tomcat](https://linuxize.com/post/how-to-install-tomcat-9-on-centos-7/) 
