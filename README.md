@@ -31,3 +31,4 @@
 计算机基础:
 ------------
 1. [JS按位非(~)运算符](https://www.cnblogs.com/moqiutao/p/6275483.html)
+2. [浏览器中JS执行机制,为什么ajax不阻塞js](https://juejin.im/post/5b0e84d0f265da08c86fa580)
