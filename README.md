@@ -27,3 +27,7 @@
 服务器：
 ------------
 1. [CentOS安装tomcat](https://linuxize.com/post/how-to-install-tomcat-9-on-centos-7/) 
+
+计算机基础:
+------------
+1. [JS按位非(~)运算符](https://www.cnblogs.com/moqiutao/p/6275483.html)
