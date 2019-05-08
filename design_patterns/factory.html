@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>factory-patterns</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function apple() {
+        this.name = '苹果'
+        this.price = 8
+        this.region = '山西'
+      }
+      function banana() {
+        this.name = '香蕉'
+        this.price = 2
+        this.region = '海南'
+      }
+      function orange() {
+        this.name = '橘子'
+        this.price = 6
+        this.region = '四川'
+      }
+      function fruitFactory(fruit) {
+        return new fruit()
+      }
+      const apple1 = fruitFactory(apple)
+      console.log(apple1);
+
+    </script>
+  </body>
+</html>
