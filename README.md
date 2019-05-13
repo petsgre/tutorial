@@ -3,7 +3,7 @@
 
 
 ## 数据库：
-1. [Navicat Premium 12.0.18 / 12.0.24安装与激活](https://github.com/petsgre/tutorial/blob/master/%E6%95%B0%E6%8D%AE%E5%BA%93/Navicat%E5%AE%89%E8%A3%85%E4%B8%8E%E6%BF%80%E6%B4%BB.md) （[原文地址](https://www.jianshu.com/p/42a33b0dda9c "https://www.jianshu.com/p/42a33b0dda9c")）
+1. [Navicat Premium 12.0.18 / 12.0.24安装与激活](./database/Navicat安装与激活.md) （[原文地址](https://www.jianshu.com/p/42a33b0dda9c "https://www.jianshu.com/p/42a33b0dda9c")）
 
 
 ## 项目工具：
@@ -30,3 +30,8 @@
 ## 设计模式
 1. [常用设计模式在前端开发中的应用](https://zhuanlan.zhihu.com/p/41423006)
 2. [设计模式简介](https://www.runoob.com/design-pattern/design-pattern-intro.html)
+3. [设计模式demo代码](./design_patterns)
+
+## 前端开发
+
+1. [js基础](./前端开发)
