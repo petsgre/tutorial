@@ -15,10 +15,12 @@
 2. [使用SwitchyOmega设置Chrome代理](https://blog.csdn.net/qq_31851531/article/details/78410146) 
 3. [怎么使用谷歌搜索之XX-NET和SwitchyOmega推荐使用](https://blog.csdn.net/csuzhaoqinghui/article/details/53391848) 一种新的科学上网方式？没试验过
 4. [Potatso Lite下载及使用教程](https://ssr.tools/125)
+5. [国内为何访问Github如此慢](https://www.wangmaoxian.com/201808/%E5%9B%BD%E5%86%85%E4%B8%BA%E4%BD%95%E8%AE%BF%E9%97%AEGithub%E5%A6%82%E6%AD%A4%E6%85%A2/) +刷新dns：dscacheutil -flushcache
 
 
 ## 虚拟机：
 1. [VMware 15 安装 MAC OS 10.13 原版（详细图文教程）](https://blog.csdn.net/ztx114/article/details/86133295) 
+2. [计算机常用命令](https://github.com/petsgre/tutorial/blob/master/notes/command.md)
 
 ## 服务器：
 1. [CentOS安装tomcat](https://linuxize.com/post/how-to-install-tomcat-9-on-centos-7/) 
