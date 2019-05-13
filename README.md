@@ -1,13 +1,9 @@
 # tutorial
 记录平时开发过程中的各种教程和使用方法
 
-
-## 数据库：
+## 开发工具：
 1. [Navicat Premium 12.0.18 / 12.0.24安装与激活](./database/Navicat安装与激活.md) （[原文地址](https://www.jianshu.com/p/42a33b0dda9c "https://www.jianshu.com/p/42a33b0dda9c")）
-
-
-## 项目工具：
-1. [microsoft project 2010激活教程/方法](https://jingyan.baidu.com/article/27fa73265206c446f9271f42.html) 
+2. [microsoft project 2010激活教程/方法](https://jingyan.baidu.com/article/27fa73265206c446f9271f42.html) 
 
 
 ## 科学上网：
@@ -18,15 +14,14 @@
 5. [国内为何访问Github如此慢](https://www.wangmaoxian.com/201808/%E5%9B%BD%E5%86%85%E4%B8%BA%E4%BD%95%E8%AE%BF%E9%97%AEGithub%E5%A6%82%E6%AD%A4%E6%85%A2/) +刷新dns：dscacheutil -flushcache
 
 
-## 虚拟机：
-1. [VMware 15 安装 MAC OS 10.13 原版（详细图文教程）](https://blog.csdn.net/ztx114/article/details/86133295) 
-2. [计算机常用命令](https://github.com/petsgre/tutorial/blob/master/notes/command.md)
 
 ## 服务器：
 1. [CentOS安装tomcat](https://linuxize.com/post/how-to-install-tomcat-9-on-centos-7/) 
+2. [VMware 15 安装 MAC OS 10.13 原版（详细图文教程）](https://blog.csdn.net/ztx114/article/details/86133295) 
+3. [计算机常用命令](https://github.com/petsgre/tutorial/blob/master/notes/command.md)
 
 ## 计算机基础:
-1. [JS按位非(~)运算符](https://www.cnblogs.com/moqiutao/p/6275483.html)
+1. [按位非(~)运算符](https://www.cnblogs.com/moqiutao/p/6275483.html)
 2. [浏览器中JS执行机制,为什么ajax不阻塞js](https://juejin.im/post/5b0e84d0f265da08c86fa580)
 
 ## 设计模式
