@@ -4,6 +4,7 @@
 ## 开发工具：
 1. [Navicat Premium 12.0.18 / 12.0.24安装与激活](./database/Navicat安装与激活.md) （[原文地址](https://www.jianshu.com/p/42a33b0dda9c "https://www.jianshu.com/p/42a33b0dda9c")）
 2. [microsoft project 2010激活教程/方法](https://jingyan.baidu.com/article/27fa73265206c446f9271f42.html) 
+3. [Atom 插件安装方法 和常用Atom 插件](https://www.jianshu.com/p/d199561d3c31)
 
 
 ## 科学上网：
