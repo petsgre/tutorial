@@ -29,6 +29,7 @@
 1. [常用设计模式在前端开发中的应用](https://zhuanlan.zhihu.com/p/41423006)
 2. [设计模式简介](https://www.runoob.com/design-pattern/design-pattern-intro.html)
 3. [设计模式代码示例](./design_patterns)
+4. [设计模式六大原则](http://www.uml.org.cn/sjms/201211023.asp)
 
 ## 前端开发
 
