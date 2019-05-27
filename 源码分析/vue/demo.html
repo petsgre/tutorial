@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="app">
+
+    </div>
+    <script type="text/javascript">
+      function MVVM(options){
+        this._options = options
+        let data = this._data = this._options.data
+        var self = this
+        Object.keys(data).forEach(function (key) {
+          self._proxy(key)
+        })
+      }
+      MVVM.prototype._proxy = function (key) {
+        console.log(this);
+        Object.defineProperty(this,key,{
+          get(){
+            console.log('get prop');
+            return this._data[key]
+          },
+          set(val){
+            console.log('set prop');
+            this._data[key] = val
+          }
+        })
+      }
+
+    </script>
+    <script type="text/javascript">
+      const vm = new MVVM({
+        el:'#app',
+        data:{
+          msg:'123'
+        }
+      })
+      console.log(vm.msg);
+      vm.msg = 'gg'
+      console.log(vm);
+
+    </script>
+  </body>
+</html>
