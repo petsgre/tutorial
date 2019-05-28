@@ -5,4 +5,4 @@
 3. 避免 undefined 空指针等bug
 4. atom 插件编写
 5. 微信公众号接口修改hosts本地调试
-6. 
+6. echarts 源码调试
