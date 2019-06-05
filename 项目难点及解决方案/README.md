@@ -7,3 +7,4 @@
 5. 微信公众号接口修改hosts本地调试
 6. echarts 源码调试
 7. ios safari 回退 浏览器缓存页面问题（最新safari，onpageshow事件不触发）
+8. 微信h5 页面缓存问题（包括返回不触发等）
