@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    let array = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+    for (var i = 0; i < array.length - 1; i++) {
+      for (var j = 0; j < array.length - i - 1; j++) {
+         // 通过第一轮比较，把10放到了数组最后面，数组变成了[9, 8, 7, 6, 5, 4, 3, 2, 1, 10]
+         // 再比较数组的前9项，再把9放到数组倒数第二位，数组变成了[8, 7, 6, 5, 4, 3, 2, 1, 9, 10]
+         // ...
+        if (array[j] > array[j + 1]) {
+          var temp
+          temp = array[j];
+          array[j] = array[j + 1];
+          array[j + 1] = temp;
+        }
+        console.log(array[j], array);
+      }
+      console.log("***");
+    }
+    console.log(array);
+  </script>
+</body>
+
+</html>
