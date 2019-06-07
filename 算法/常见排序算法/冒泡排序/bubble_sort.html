@@ -8,24 +8,37 @@
 
 <body>
   <script type="text/javascript">
-    let array = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+    let arr = [5,7,999,9,2,3,100,222,1]
+    let arr1 = [5,7,999,9,2,3,100,222,1]
 
-    for (var i = 0; i < array.length - 1; i++) {
-      for (var j = 0; j < array.length - i - 1; j++) {
+    for (var i = 0; i < arr1.length - 1; i++) {
+      for (var j = 0; j < arr1.length - i - 1; j++) {
          // 通过第一轮比较，把10放到了数组最后面，数组变成了[9, 8, 7, 6, 5, 4, 3, 2, 1, 10]
          // 再比较数组的前9项，再把9放到数组倒数第二位，数组变成了[8, 7, 6, 5, 4, 3, 2, 1, 9, 10]
          // ...
-        if (array[j] > array[j + 1]) {
+        if (arr1[j] > arr1[j + 1]) {
           var temp
-          temp = array[j];
-          array[j] = array[j + 1];
-          array[j + 1] = temp;
+          temp = arr1[j];
+          arr1[j] = arr1[j + 1];
+          arr1[j + 1] = temp;
         }
-        console.log(array[j], array);
       }
-      console.log("***");
     }
-    console.log(array);
+    console.log(arr1);
+
+
+    // 也可以将最小的放到前面，然后后面的再俩俩比较。只要懂得了原理，还是有花样的。
+    for (var i = 0; i < arr.length - 1; i++) {
+      for (var j = arr.length; j > i; j--) {
+        if(arr[j-1]>arr[j]){
+          let temp;
+          temp = arr[j]
+          arr[j] = arr[j-1]
+          arr[j-1] = temp
+        }
+      }
+    }
+    console.log(arr);
   </script>
 </body>
 
