@@ -5,6 +5,7 @@
 4. [js利用offsetWidth和clientWidth来计算滚动条的宽度](https://www.haorooms.com/post/js_scroll_width)
 5. [defer和async](https://juejin.im/entry/5a7ad55ef265da4e81238da9) 看到结论笑出了声，哈哈
 6. [Mock.js的正确使用以及丢失cookie的问题](https://zhuanlan.zhihu.com/p/63761370)
+7. [require和import的区别](https://blog.csdn.net/qq_28702545/article/details/54892562)
 
 ## css
 
