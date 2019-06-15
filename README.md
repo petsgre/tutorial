@@ -7,6 +7,7 @@
 3. [Atom 插件安装方法 和常用Atom 插件](https://www.jianshu.com/p/d199561d3c31)
 4. [Atom快捷键(Mac)](http://www.rainyleo.com/2016/08/13/快捷键/)
 5. [chrome开发工具设置service worker](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle#update_on_reload)
+6. [Mac使用tree生成目录结构](https://blog.csdn.net/qq673318522/article/details/53713903)
 
 ## 科学上网：
 1. [chrome神插件之：SwitchyOmega的安装设置](https://www.cnblogs.com/LyndonMario/p/9326176.html)
