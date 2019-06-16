@@ -13,7 +13,7 @@ console.log(parse(obj,'a.b') == 1) //true
 
 ```
 
-考察js方法   replace split 等
+考察js方法   replace split reduce 等
 
 
 
