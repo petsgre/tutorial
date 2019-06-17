@@ -28,6 +28,7 @@
 2. [浏览器中JS执行机制,为什么ajax不阻塞js](https://juejin.im/post/5b0e84d0f265da08c86fa580)
 3. [DNS域名解析](https://juejin.im/entry/599109d46fb9a03c4c270f82)
 4. CORS(待总结)
+5. 内网穿透原理(待总结)
 
 ## 设计模式
 1. [常用设计模式在前端开发中的应用](https://zhuanlan.zhihu.com/p/41423006)
