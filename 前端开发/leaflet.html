@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>leaflet</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+  <style media="screen">
+    #mapid {
+      height: 180px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="mapid"></div>
+  <script type="text/javascript">
+    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox.streets',
+      accessToken: 'pk.eyJ1IjoicGV0c2dyZSIsImEiOiJjangwaW0xOGsxMXdrNDlveTQ0bGNhNzkwIn0.KudI2ihYP1cMUTOZb9YQfA'
+    }).addTo(mymap);
+    var marker = L.marker([51.5, -0.09]).addTo(mymap);
+    var circle = L.circle([51.508, -0.11], {
+      color: 'red',
+      fillColor: '#f03',
+      fillOpacity: 0.5,
+      radius: 500
+    }).addTo(mymap);
+    circle.on('click', function() {
+      console.log(2);
+    });
+    var polygon = L.polygon([
+      [51.509, -0.08],
+      [51.503, -0.06],
+      [51.51, -0.047]
+    ]).addTo(mymap);
+    marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();
+    circle.bindPopup("I am a circle.");
+    polygon.bindPopup("I am a polygon.");
+
+    function onMapClick(e) {
+      alert("You clicked the map at " + e.latlng);
+    }
+
+    mymap.on('click', onMapClick);
+  </script>
+</body>
+
+</html>
