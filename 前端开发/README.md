@@ -1,12 +1,12 @@
 ## js
 1. [JS实现继承的几种方式](https://www.cnblogs.com/humin/p/4556820.html)
-2. [JS的防抖与节流](https://mp.weixin.qq.com/s/Vkshf-nEDwo2ODUJhxgzVA)
+2. [JS的防抖与节流](https://mp.weixin.qq.com/s/Vkshf-nEDwo2ODUJhxgzVA)/[demo](./js基础/throttle.js)
 3. [原型链继承](./js基础/原型链继承.md)
 4. [js利用offsetWidth和clientWidth来计算滚动条的宽度](https://www.haorooms.com/post/js_scroll_width)
 5. [defer和async](https://juejin.im/entry/5a7ad55ef265da4e81238da9) 看到结论笑出了声，哈哈
 6. [Mock.js的正确使用以及丢失cookie的问题](https://zhuanlan.zhihu.com/p/63761370)
 7. [require和import的区别](https://blog.csdn.net/qq_28702545/article/details/54892562)
-8. [函数柯里化]() // 实用的编程技巧
+8. [函数柯里化](./js基础/cuury.js) // 实用的编程技巧
 
 ## css
 
