@@ -17,7 +17,7 @@
 
 expo-cli 代表 pc端的expo，通过terminal打开的命令需要登录
 
-![终端截图](/Users/apple/tutorial/前端开发/react-native/expo2.png)
+![终端截图](./expo2.png)
 
 ```
 npm install -g expo-cli
@@ -34,6 +34,6 @@ npm start # you can also use: expo start
 
 3. 2端的expo都登录之后，重新启动项目，会在客户端发现多了个project
 
-   ![终端截图](/Users/apple/tutorial/前端开发/react-native/expo1.jpeg)
+   ![终端截图](./expo1.jpeg)
 
 4. 以上步骤出现说明环境搭建成功，接下来可以继续写application了
