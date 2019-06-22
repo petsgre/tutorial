@@ -2,7 +2,7 @@
 
 
 
-![image-20190623021910431](/Users/apple/Library/Application Support/typora-user-images/image-20190623021910431.png)
+![image-20190623021910431](./image-20190623021910431.png)
 
 
 
@@ -22,7 +22,7 @@
 
 是要设置 设备 如图打勾即可 面板呼出快捷键 shift+command+2
 
-![image-20190623022314726](/Users/apple/Library/Application Support/typora-user-images/image-20190623022314726.png)
+![image-20190623022314726](./image-20190623022314726.png)
 
 
 
