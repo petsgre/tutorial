@@ -8,6 +8,7 @@
 4. [Atom快捷键(Mac)](http://www.rainyleo.com/2016/08/13/快捷键/)
 5. [chrome开发工具设置service worker](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle#update_on_reload)
 6. [Mac使用tree生成目录结构](https://blog.csdn.net/qq673318522/article/details/53713903)
+7. [vscode 格式化代码双引号](https://blog.csdn.net/grepets/article/details/88553606)
 
 ## 科学上网：
 1. [chrome神插件之：SwitchyOmega的安装设置](https://www.cnblogs.com/LyndonMario/p/9326176.html)
