@@ -1,5 +1,9 @@
 # React-native 开发流程
 
+此流程是利用expo的开发模式
+
+完全构建模式  [链接](./react-native.md)
+
 ### 环境
 
 - MacOS 10.13.6
