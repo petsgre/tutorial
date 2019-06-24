@@ -7,6 +7,8 @@
 6. [Mock.js的正确使用以及丢失cookie的问题](https://zhuanlan.zhihu.com/p/63761370)
 7. [require和import的区别](https://blog.csdn.net/qq_28702545/article/details/54892562)
 8. [函数柯里化](./js基础/cuury.js) // 实用的编程技巧
+9. [微任务、宏任务与Event-Loop](https://juejin.im/post/5b73d7a6518825610072b42b)
+10. [全面解析Vue.nextTick实现原理](https://juejin.im/entry/5aced80b518825482e39441e)
 
 ## css
 
