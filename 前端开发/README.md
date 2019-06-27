@@ -9,6 +9,7 @@
 8. [函数柯里化](./js基础/cuury.js) // 实用的编程技巧
 9. [微任务、宏任务与Event-Loop](https://juejin.im/post/5b73d7a6518825610072b42b)
 10. [全面解析Vue.nextTick实现原理](https://juejin.im/entry/5aced80b518825482e39441e)
+11. [js错误隔离](http://taobaofed.org/blog/2016/11/10/prevent-prop-access-error-in-js/)
 
 ## css
 
