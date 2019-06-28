@@ -10,6 +10,8 @@
 9. [微任务、宏任务与Event-Loop](https://juejin.im/post/5b73d7a6518825610072b42b)
 10. [全面解析Vue.nextTick实现原理](https://juejin.im/entry/5aced80b518825482e39441e)
 11. [js错误隔离](http://taobaofed.org/blog/2016/11/10/prevent-prop-access-error-in-js/)
+12. [JavaScript浮点数运算的精度问题](https://www.html.cn/archives/7340)
+13. [js精度问题解决方案](./js基础/js精度问题解决方案.md)
 
 ## css
 
