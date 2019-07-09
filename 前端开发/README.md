@@ -24,6 +24,10 @@
 
 ## html
 
+## react
+
+1. [react脚手架-webpack](https://segmentfault.com/a/1190000019126657)
+
 ## react-native
 
 1. [Add App Icons and Launch Screens to React Native Apps](https://medium.com/better-programming/react-native-add-app-icons-and-launch-screens-onto-ios-and-android-apps-3bfbc20b7d4c)
