@@ -27,6 +27,7 @@
 ## react
 
 1. [react脚手架-webpack](https://segmentfault.com/a/1190000019126657)
+2. [使用react-intl实现React组件国际化](https://www.jianshu.com/p/574f6cea4f26)
 
 ## react-native
 
