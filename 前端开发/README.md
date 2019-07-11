@@ -12,6 +12,7 @@
 11. [js错误隔离](http://taobaofed.org/blog/2016/11/10/prevent-prop-access-error-in-js/)
 12. [JavaScript浮点数运算的精度问题](https://www.html.cn/archives/7340)
 13. [js精度问题解决方案](./js基础/js精度问题解决方案.md)
+14. [图片预加载模糊处理](http://www.fly63.com/article/detial/359)
 
 ## css
 
