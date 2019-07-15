@@ -22,6 +22,7 @@
 4. [子元素的margin-top属性传递给父元素的问题](https://blog.csdn.net/liuyan19891230/article/details/52515357)
 5. [fontsize0解决空白间隙问题](https://blog.csdn.net/github_38771368/article/details/73549381)
 6. [css-grid布局](http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
+7. [css实现多边形](https://segmentfault.com/a/1190000019013585)
 
 ## html
 
