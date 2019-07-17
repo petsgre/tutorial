@@ -9,5 +9,9 @@
 virtualenv --no-site-packages venv
 ```
 
+```
+source ./bin/activate // 启动虚拟环境
+```
+
 5. if your terminal has (venv), cd to project directory
 6. python3 manage.py runserver
