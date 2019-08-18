@@ -27,6 +27,8 @@
 
 ## html
 
+1. [vscode use emmet by default](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
+
 ## react
 
  <span style="color:red">不要在render函数里面使用高阶组件<span>
