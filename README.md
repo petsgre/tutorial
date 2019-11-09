@@ -1,38 +1,42 @@
 # tutorial
+
 记录平时开发过程中的各种教程和使用方法
 
 ## 开发工具：
-1. [Navicat Premium 12.0.18 / 12.0.24安装与激活](./database/Navicat安装与激活.md) （[原文地址](https://www.jianshu.com/p/42a33b0dda9c "https://www.jianshu.com/p/42a33b0dda9c")）
-2. [microsoft project 2010激活教程/方法](https://jingyan.baidu.com/article/27fa73265206c446f9271f42.html)
-3. [Atom 插件安装方法 和常用Atom 插件](https://www.jianshu.com/p/d199561d3c31)
-4. [Atom快捷键(Mac)](http://www.rainyleo.com/2016/08/13/快捷键/)
-5. [chrome开发工具设置service worker](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle#update_on_reload)
-6. [Mac使用tree生成目录结构](https://blog.csdn.net/qq673318522/article/details/53713903)
+
+1. [Navicat Premium 12.0.18 / 12.0.24 安装与激活](./database/Navicat安装与激活.md) （[原文地址](https://www.jianshu.com/p/42a33b0dda9c "https://www.jianshu.com/p/42a33b0dda9c")）
+2. [microsoft project 2010 激活教程/方法](https://jingyan.baidu.com/article/27fa73265206c446f9271f42.html)
+3. [Atom 插件安装方法 和常用 Atom 插件](https://www.jianshu.com/p/d199561d3c31)
+4. [Atom 快捷键(Mac)](http://www.rainyleo.com/2016/08/13/快捷键/)
+5. [chrome 开发工具设置 service worker](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle#update_on_reload)
+6. [Mac 使用 tree 生成目录结构](https://blog.csdn.net/qq673318522/article/details/53713903)
 7. [vscode 格式化代码双引号](https://blog.csdn.net/grepets/article/details/88553606)
+8. [git 的 GUI 工具 Sourcetree 使用及命令行对比](https://juejin.im/post/5b4d66125188251ace75ba27)
 
 ## 科学上网：
-1. [chrome神插件之：SwitchyOmega的安装设置](https://www.cnblogs.com/LyndonMario/p/9326176.html)
-2. [使用SwitchyOmega设置Chrome代理](https://blog.csdn.net/qq_31851531/article/details/78410146)
-3. [怎么使用谷歌搜索之XX-NET和SwitchyOmega推荐使用](https://blog.csdn.net/csuzhaoqinghui/article/details/53391848) 一种新的科学上网方式？没试验过
-4. [Potatso Lite下载及使用教程](https://ssr.tools/125)
-5. [国内为何访问Github如此慢](https://www.wangmaoxian.com/201808/%E5%9B%BD%E5%86%85%E4%B8%BA%E4%BD%95%E8%AE%BF%E9%97%AEGithub%E5%A6%82%E6%AD%A4%E6%85%A2/) [国内为何访问Github如此慢2](https://juejin.im/post/5c42f94551882525a94e2945) +刷新dns：dscacheutil -flushcache
 
-
-
+1. [chrome 神插件之：SwitchyOmega 的安装设置](https://www.cnblogs.com/LyndonMario/p/9326176.html)
+2. [使用 SwitchyOmega 设置 Chrome 代理](https://blog.csdn.net/qq_31851531/article/details/78410146)
+3. [怎么使用谷歌搜索之 XX-NET 和 SwitchyOmega 推荐使用](https://blog.csdn.net/csuzhaoqinghui/article/details/53391848) 一种新的科学上网方式？没试验过
+4. [Potatso Lite 下载及使用教程](https://ssr.tools/125)
+5. [国内为何访问 Github 如此慢](https://www.wangmaoxian.com/201808/%E5%9B%BD%E5%86%85%E4%B8%BA%E4%BD%95%E8%AE%BF%E9%97%AEGithub%E5%A6%82%E6%AD%A4%E6%85%A2/) [国内为何访问 Github 如此慢 2](https://juejin.im/post/5c42f94551882525a94e2945) +刷新 dns：dscacheutil -flushcache
 
 ## 服务器：
-1. [CentOS安装tomcat](https://linuxize.com/post/how-to-install-tomcat-9-on-centos-7/)
+
+1. [CentOS 安装 tomcat](https://linuxize.com/post/how-to-install-tomcat-9-on-centos-7/)
 2. [VMware 15 安装 MAC OS 10.13 原版（详细图文教程）](https://blog.csdn.net/ztx114/article/details/86133295)
 3. [计算机常用命令](https://github.com/petsgre/tutorial/blob/master/notes/command.md)
 
 ## 计算机基础:
+
 1. [按位非(~)运算符](https://www.cnblogs.com/moqiutao/p/6275483.html)
-2. [浏览器中JS执行机制,为什么ajax不阻塞js](https://juejin.im/post/5b0e84d0f265da08c86fa580)
-3. [DNS域名解析](https://juejin.im/entry/599109d46fb9a03c4c270f82)
+2. [浏览器中 JS 执行机制,为什么 ajax 不阻塞 js](https://juejin.im/post/5b0e84d0f265da08c86fa580)
+3. [DNS 域名解析](https://juejin.im/entry/599109d46fb9a03c4c270f82)
 4. CORS(待总结)
 5. 内网穿透原理(待总结)
 
 ## 设计模式
+
 1. [常用设计模式在前端开发中的应用](https://zhuanlan.zhihu.com/p/41423006)
 2. [设计模式简介](https://www.runoob.com/design-pattern/design-pattern-intro.html)
 3. [设计模式代码示例](./design_patterns)
@@ -40,9 +44,9 @@
 
 ## 前端开发
 
-1. [js基础](./前端开发)
+1. [js 基础](./前端开发)
 2. [前端性能优化]() 需总结
-3. [flow使用初体验](https://github.com/petsgre/flow)
+3. [flow 使用初体验](https://github.com/petsgre/flow)
 
 ## 数据结构
 
@@ -58,7 +62,7 @@
 
 ## 源码分析
 
-1. [vue源码分析](./源码分析/vue)
+1. [vue 源码分析](./源码分析/vue)
 
 ## 程序人生
 
@@ -68,42 +72,39 @@
 
 1. [梁少峰的个人博客](https://github.com/youngwind/blog) 高级前端需要掌握的一些知识，比较深入
 2. [前端入门和进阶学习笔记](https://github.com/qianguyihao/Web) 适合基础知识查缺补漏
-3. [sunyongjian个人博客](https://github.com/sunyongjian/blog) 高级前端知识
+3. [sunyongjian 个人博客](https://github.com/sunyongjian/blog) 高级前端知识
 
 ## 技术栈自检
 
 1. 前端
 
-	- [x] vue（高级）
-	- [x] react (中级)
-	- [x] javascript(高级，熟练)
-	- [x] typescript(高级，熟练)
-	- [x] css3(中级，熟练)
-	- [x] 微信小程序(中级)
-	- [x] nodejs(初级)
+   - [x] vue（高级）
+   - [x] react (中级)
+   - [x] javascript(高级，熟练)
+   - [x] typescript(高级，熟练)
+   - [x] css3(中级，熟练)
+   - [x] 微信小程序(中级)
+   - [x] nodejs(初级)
 
 2. 后端
 
-	- [x] java(中级)
-	- [x] spring mvc(中级)
-	- [x] c#(初级)
-	- [x] mybatis(初级)
+   - [x] java(中级)
+   - [x] spring mvc(中级)
+   - [x] c#(初级)
+   - [x] mybatis(初级)
 
 3. 数据库
 
-	- [x] mysql等关系型数据库(初级)
-	- [x] mongodb(初级)
-
+   - [x] mysql 等关系型数据库(初级)
+   - [x] mongodb(初级)
 
 - [**过去的难点以及解决方案**](./项目难点及解决方案)
 
-## 19年计划（目标：高级开发）
+## 19 年计划（目标：高级开发）
 
-- [ ] 深入学习vue源码
-	- 手动现实简易版vue
-- [ ] 熟练使用react
-	- 完成react-admin 项目
-- [ ] 熟练使用react-native
+- [ ] 深入学习 vue 源码 - 手动现实简易版 vue
+- [ ] 熟练使用 react - 完成 react-admin 项目
+- [ ] 熟练使用 react-native
 - [ ] 学习设计模式，熟悉使用常用的设计模式
 - [ ] 学习算法，熟悉一些常用的算法
 - [ ] 学习数据结构，熟悉所有数据结构
