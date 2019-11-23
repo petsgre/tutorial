@@ -23,3 +23,5 @@ git stash
 git checkout commit file  (检出某个提交的文件)
 
 git mv
+
+git remote set-url origin git@xxx
