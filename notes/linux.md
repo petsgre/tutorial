@@ -14,3 +14,9 @@ cp -a demo/ target/
 rsync -rv --exclude=.git demo/ target/
 
 ```
+
+3. 修改文件夹名称
+
+```
+mv xxx yyy
+```
