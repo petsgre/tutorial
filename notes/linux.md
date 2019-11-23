@@ -20,3 +20,9 @@ rsync -rv --exclude=.git demo/ target/
 ```
 mv xxx yyy
 ```
+
+4. 传输文件
+
+```
+scp /zx/project/xxx.js root@11.11.11.11:/home/project/
+```
