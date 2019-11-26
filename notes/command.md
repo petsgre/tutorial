@@ -2,13 +2,13 @@
 
 - 查询网址ip：nslookup www.baidu.com
 
+- [Windows非管理员修改hosts文件](https://wenku.baidu.com/view/1437dd12bb4cf7ec4afed0de.html)
+
 # Linux #
 
 - [vim选中字符复制/剪切/粘贴](https://www.cnblogs.com/luosongchao/p/3193153.html)
 
-- [Windows非管理员修改hosts文件](https://wenku.baidu.com/view/1437dd12bb4cf7ec4afed0de.html)
-
-- [linux快捷键笔记](./linux.md)
+- [Mac 终端tab自动补全忽略大小写](https://www.jianshu.com/p/24eed86ae209)
 
 # Emacs #
 
