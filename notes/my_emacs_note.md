@@ -9,3 +9,6 @@
 4. C-g C-/ 反撤销
 
 5. C-x C-j 打开当前文件名目录
+
+6. M-x revert-buffer 刷新当前buffer
+
