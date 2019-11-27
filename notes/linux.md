@@ -26,3 +26,6 @@ mv xxx yyy
 ```
 scp /zx/project/xxx.js root@11.11.11.11:/home/project/
 ```
+
+5. 查看nginx状态
+systemctl status nginx.service
