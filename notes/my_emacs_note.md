@@ -7,3 +7,5 @@
 3. C-/ 撤销
 
 4. C-g C-/ 反撤销
+
+5. M-x revert-buffer 刷新当前buffer
