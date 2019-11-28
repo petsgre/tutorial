@@ -26,4 +26,6 @@ git mv
 
 git remote set-url origin git@xxx
 
-git show 
+git show
+
+git branch --set-upstream-to=origin/<local_branch> <origin_branch> 
