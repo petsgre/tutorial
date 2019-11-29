@@ -12,6 +12,7 @@
 6. [Mac 使用 tree 生成目录结构](https://blog.csdn.net/qq673318522/article/details/53713903)
 7. [vscode 格式化代码双引号](https://blog.csdn.net/grepets/article/details/88553606)
 8. [git 的 GUI 工具 Sourcetree 使用及命令行对比](https://juejin.im/post/5b4d66125188251ace75ba27)
+9. [git基本详细教程](http://www.codeceo.com/article/git-usage.html)
 
 ## 科学上网：
 
