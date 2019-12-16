@@ -12,3 +12,6 @@
 
 6. M-x revert-buffer 刷新当前buffer
 
+7. C-d 打开当前buffer目录
+
+8. C-M-\ 格式化代码
