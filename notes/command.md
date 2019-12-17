@@ -10,6 +10,8 @@
 
 - [Mac 终端tab自动补全忽略大小写](https://www.jianshu.com/p/24eed86ae209)
 
+- [iTerm与Zsh](https://xiaozhou.net/learn-the-command-line-iterm-and-zsh-2017-06-23.html)
+
 # Emacs #
 
 - [emacs常用快捷键](./emacs_command.md)
