@@ -12,6 +12,8 @@
 
 - [iTerm与Zsh](https://xiaozhou.net/learn-the-command-line-iterm-and-zsh-2017-06-23.html)
 
+- [linux screen的用法](https://www.jianshu.com/p/e91746ef4058)
+
 # Emacs #
 
 - [emacs常用快捷键](./emacs_command.md)
