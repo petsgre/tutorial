@@ -29,3 +29,7 @@ scp /zx/project/xxx.js root@11.11.11.11:/home/project/
 
 5. 查看nginx状态
 systemctl status nginx.service
+
+6.查看端口状态
+
+netstat -ap
