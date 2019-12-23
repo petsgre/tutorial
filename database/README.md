@@ -1,0 +1,1 @@
+1. (ubuntu安装mysql)[https://support.rackspace.com/how-to/install-mysql-server-on-the-ubuntu-operating-system/]
