@@ -20,6 +20,8 @@ rsync -rv --exclude=.git demo/ target/
 ```
 mv xxx yyy
 ```
+> 修改文件名：mv xxx.js xxx.md
+
 
 4. 传输文件
 
