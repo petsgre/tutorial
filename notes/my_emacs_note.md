@@ -21,3 +21,5 @@
 10. C-x h 全选
 
 11. undo redo都是用 command+z ，使用 C-g切换
+
+12. ubuntu undo redo 快捷键  ，不使用 command+z,而是用 C+_
