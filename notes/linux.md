@@ -35,3 +35,11 @@ systemctl status nginx.service
 6.查看端口状态
 
 netstat -ap
+
+7. nginx 配置history模式
+
+```
+location / {
+  try_files $uri $uri/ /index.html;
+}
+```
