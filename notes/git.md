@@ -28,4 +28,11 @@ git remote set-url origin git@xxx
 
 git show
 
-git branch --set-upstream-to=origin/<local_branch> <origin_branch> 
+git branch --set-upstream-to=origin/<local_branch> <origin_branch>
+
+
+# some config
+
+1. git中文乱码问题
+
+> git config --global core.quotepath false
