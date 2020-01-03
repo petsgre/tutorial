@@ -20,6 +20,17 @@
 3. 根绝key判断，哪些节点需要drop，哪些需要move
 ```
 
+2. React生命周期
+
+ - componentWillMount
+ - render
+ - componentDidMount
+ - shouldComponentUpdate
+ - render
+ - componentDidUpdate
+ - componentWillUnmount
+
+![REACT_LIFE_CYCLE](./react_life_cycle.png)
 ### React 性能优化:
 
 1. 展示组件 PureComponent 代替 Component
