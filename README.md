@@ -82,7 +82,7 @@
    - [x] vue（高级）
    - [x] react (中级)
    - [x] javascript(高级，熟练)
-   - [x] typescript(高级，熟练)
+   - [x] typescript(中级，熟练)
    - [x] css3(中级，熟练)
    - [x] 微信小程序(中级)
    - [x] nodejs(初级)
@@ -93,7 +93,8 @@
    - [x] spring mvc(中级)
    - [x] c#(初级)
    - [x] mybatis(初级)
-
+   - [x] python(初级)
+   
 3. 数据库
 
    - [x] mysql 等关系型数据库(初级)
