@@ -29,3 +29,10 @@
 ## html
 
 1. [vscode use emmet by default](https://medium.com/@eshwaren/enable-emmet-support-for-jsx-in-visual-studio-code-react-f1f5dfe8809c)
+
+
+
+
+# Notes
+
+1. 401:没有带权限标志；403:带了权限标志，但是权限不足
