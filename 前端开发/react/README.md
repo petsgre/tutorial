@@ -31,6 +31,8 @@
  - componentWillUnmount
 
 ![REACT_LIFE_CYCLE](./react_life_cycle.png)
+
+
 ### React 性能优化:
 
 1. 展示组件 PureComponent 代替 Component
@@ -41,3 +43,5 @@
 6. 可添加删除的列表不要使用 index 作为 key(可使用 shortid 生成简短 id)
 7. gzip 压缩
 8. 避免 ...props
+9. 使用Reselect 避免重复渲染
+10. 使用immutability-helper只更改需要更变的数据
