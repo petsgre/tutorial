@@ -20,3 +20,12 @@
 ### Webpack
 
 - 减小 vendors 包体积大小，全部 split；根据包名再分包
+
+
+### 第三方库
+
+- 阅读百度echarts源码，查看树形图 属性(使用的border代替background)，第一次读懂了大型项目代码
+
+- 修改ant-design-pro 滚动条宽度问题
+
+- rsuite表格获取高度问题(充分理解生命周期，在适当的时候rerender)
