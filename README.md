@@ -74,6 +74,7 @@
 1. [梁少峰的个人博客](https://github.com/youngwind/blog) 高级前端需要掌握的一些知识，比较深入
 2. [前端入门和进阶学习笔记](https://github.com/qianguyihao/Web) 适合基础知识查缺补漏
 3. [sunyongjian 个人博客](https://github.com/sunyongjian/blog) 高级前端知识
+4. [https://juejin.im/post/59278e312f301e006c2e1510](冴羽 掘金)
 
 ## 技术栈自检
 
