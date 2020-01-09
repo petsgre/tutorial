@@ -23,3 +23,5 @@
 11. undo redo都是用 command+z ，使用 C-g切换
 
 12. ubuntu undo redo 快捷键  ，不使用 command+z,而是用 C+_
+
+13. M-x ==> find-grep 在当前目录下全局搜索
