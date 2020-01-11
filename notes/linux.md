@@ -43,3 +43,7 @@ location / {
   try_files $uri $uri/ /index.html;
 }
 ```
+
+8. 查看系统是32位还是64位
+
+> sudo uname -m
