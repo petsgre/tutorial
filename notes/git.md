@@ -36,3 +36,12 @@ git branch --set-upstream-to=origin/<local_branch> <origin_branch>
 1. git中文乱码问题
 
 > git config --global core.quotepath false
+
+
+2. git merge 解决冲突 使用他人版本或者自己版本
+
+   使用 参数 git checkout --ours <file>
+   然后 git add
+   或者
+   使用 git checkout --theirs <file>;git add
+   
