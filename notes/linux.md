@@ -47,3 +47,8 @@ location / {
 8. 查看系统是32位还是64位
 
 > sudo uname -m
+
+9. 查看端口占用
+
+>  lsof -i tcp:9000
+>  kill pid
