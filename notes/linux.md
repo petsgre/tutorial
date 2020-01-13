@@ -1,3 +1,7 @@
+# 文章
+
+1. [图解SSH原理](https://www.jianshu.com/p/33461b619d53)
+
 # linux 命令笔记
 
 1. 查询linux系统版本
@@ -52,3 +56,4 @@ location / {
 
 >  lsof -i tcp:9000
 >  kill pid
+
