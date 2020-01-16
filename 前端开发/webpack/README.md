@@ -21,6 +21,10 @@
 
 1. [webpack 最佳配置指北](https://juejin.im/post/5e0e1153e51d45414b74de65?utm_source=gold_browser_extension)
 
+难点解决：
+
+1. devserver node占用高内存(需总结)
+
 Webpack 配置说明:
 
 1. 入口
