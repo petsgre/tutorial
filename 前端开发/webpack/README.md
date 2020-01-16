@@ -17,3 +17,30 @@
 
 1. [webpack概念](https://webpack.docschina.org/concepts/)
 2. [webpack-nodeAPI](./webpack-nodeAPI.md)
+
+
+
+Webpack 配置说明:
+
+1. 入口
+
+```
+module.exports = {
+  entry: `./index.js`,
+}
+```
+
+
+2. 输出
+
+```
+output:{
+  // path一定是绝对路径，使用reslove可以获取绝对路径
+  path:'xxx/dir'，
+  // 输出的文件名称
+  filename:'bundle.js',
+  // 相对路径 默认值是''空字符
+  publicPath:'/'
+}
+```
+> __dirname: 总是返回被执行的 js 所在文件夹的绝对路径
