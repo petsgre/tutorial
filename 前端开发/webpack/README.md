@@ -23,7 +23,17 @@
 
 难点解决：
 
-1. devserver node占用高内存(需总结)
+1. devserver node 占用高内存
+
+> 使用 watchOptions 来提高性能
+
+```
+watchOptions: {
+  poll: false, //禁止轮询  poll可是设置number，当watch如果失败的时候轮询再编译
+  aggregateTimeout: 1000, // 延迟执行编译
+  ignored: /node_modules/ // 忽略不需要打包的文件 也可以使用anywatch ['xxx/**/*.js','node_modules']
+},
+```
 
 Webpack 配置说明:
 
