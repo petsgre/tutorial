@@ -21,6 +21,7 @@
 
 1. [webpack 最佳配置指北](https://juejin.im/post/5e0e1153e51d45414b74de65?utm_source=gold_browser_extension)
 
+2. [corejs3兼容最新es6语法](http://jsdr.info/webpack/babel7%E8%BD%AC%E7%A0%81-corejs3%E7%9A%84%E6%9B%B4%E6%96%B0/)
 难点解决：
 
 1. devserver node 占用高内存
