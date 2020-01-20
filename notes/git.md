@@ -31,14 +31,8 @@ git show
 git branch --set-upstream-to=origin/<local_branch> <origin_branch>
 
 
-# some config
 
-1. git中文乱码问题
-
-> git config --global core.quotepath false
-
-
-2. git merge 解决冲突 使用他人版本或者自己版本
+- git merge 解决冲突 使用他人版本或者自己版本
 
    使用 参数 git checkout --ours <file>
    然后 git add
@@ -46,6 +40,18 @@ git branch --set-upstream-to=origin/<local_branch> <origin_branch>
    使用 git checkout --theirs <file>;git add
 
 
-3. git commit --date="Jan 6 10:10:10 2020 +0800"
+- git commit --date="Jan 6 10:10:10 2020 +0800"
 
    使用date参数，修改提交的时间，可以弥补之前忘记的提交
+
+- git rebase -i dev
+
+  在合并主线代码的时候使用rebase可以将自己分支的commit都排在主线分支之后
+  
+
+# Some Config
+
+1. git中文乱码问题
+
+> git config --global core.quotepath false
+
