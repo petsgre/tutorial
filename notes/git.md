@@ -44,4 +44,8 @@ git branch --set-upstream-to=origin/<local_branch> <origin_branch>
    然后 git add
    或者
    使用 git checkout --theirs <file>;git add
-   
+
+
+3. git commit --date="Jan 6 10:10:10 2020 +0800"
+
+   使用date参数，修改提交的时间，可以弥补之前忘记的提交
