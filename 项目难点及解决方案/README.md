@@ -20,6 +20,7 @@
 ### Webpack
 
 - 减小 vendors 包体积大小，全部 split；根据包名再分包
+- 使用p-min-delay导致无法延迟加载(定位bug能力， Loading chunk 41 failed,无法直接判断是哪里打包错误，所以使用注释代码的方式去定位，找到GitHub仓库，查看issue，发现没人维护)
 
 
 ### 第三方库
