@@ -48,6 +48,7 @@
 1. [js 基础](./前端开发)
 2. [前端性能优化](./前端开发/前端性能优化.md)
 3. [flow 使用初体验](https://github.com/petsgre/flow)
+4. [良好的开发习惯](https://github.com/ryanmcdermott/clean-code-javascript)
 
 ## 数据结构
 
