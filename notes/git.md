@@ -8,6 +8,8 @@ git commit -m 'xxx'
 
 git pull
 
+git pull --allow-unrelated-history 在已经创建的仓库拉去代码，合并本地已有的历史
+
 git push
 
 git log
@@ -47,7 +49,6 @@ git branch --set-upstream-to=origin/<local_branch> <origin_branch>
 - git rebase -i dev
 
   在合并主线代码的时候使用rebase可以将自己分支的commit都排在主线分支之后
-  
 
 # Some Config
 
