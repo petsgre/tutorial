@@ -13,3 +13,9 @@ refactor:重构
 test:测试
 
 chore:构建过程或者辅助工具的变动(杂项)
+
+
+
+e.g:
+
+git commit -am "feat:添加新功能"
