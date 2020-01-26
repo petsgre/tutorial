@@ -1,4 +1,4 @@
-# git commit standart
+# Git commit standart
 
 feat:新功能
 
