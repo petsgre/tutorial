@@ -5,3 +5,4 @@
 
 
 - webpack-dev-server  --progress 可以显示出正在打包时候的进度
+- clientLogLevel: "none" 删除热加载时候 浏览器打印的编译日志
