@@ -57,3 +57,6 @@ location / {
 >  lsof -i tcp:9000
 >  kill pid
 
+10. 使用more分页查看命令行内容
+
+> xxx command | more
