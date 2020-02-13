@@ -9,3 +9,10 @@
 
  从最不具体元素 -------> 具体元素捕获
  从最具体元素(target) ---------> 最不具体元素冒泡
+
+3. input file onchange事件在上传两种同样的名字文件时候不触发
+
+```
+// 使用dom将当前节点value改为null
+inputDom.value = null;
+```
