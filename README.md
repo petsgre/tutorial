@@ -82,7 +82,7 @@
 1. 前端
 
    - [x] vue（高级）
-   - [x] react (中级)
+   - [x] react (高级)
    - [x] javascript(高级，熟练)
    - [x] typescript(中级，熟练)
    - [x] css3(中级，熟练)
