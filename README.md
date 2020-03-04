@@ -12,7 +12,7 @@
 6. [Mac 使用 tree 生成目录结构](https://blog.csdn.net/qq673318522/article/details/53713903)
 7. [vscode 格式化代码双引号](https://blog.csdn.net/grepets/article/details/88553606)
 8. [git 的 GUI 工具 Sourcetree 使用及命令行对比](https://juejin.im/post/5b4d66125188251ace75ba27)
-9. [git基本详细教程](http://www.codeceo.com/article/git-usage.html)
+9. [git 基本详细教程](http://www.codeceo.com/article/git-usage.html)
 
 ## 科学上网：
 
@@ -96,7 +96,7 @@
    - [x] c#(初级)
    - [x] mybatis(初级)
    - [x] python(初级)
-   
+
 3. 数据库
 
    - [x] mysql 等关系型数据库(初级)
@@ -117,11 +117,13 @@
 
 ## 2020 年计划
 
-- [ ] 学习react源码原理
-- [ ] 学习redux源码原理
-- [ ] 完成react-admin项目
+- [ ] 学习 react 源码原理
+- [ ] 学习 redux 源码原理
+- [ ] 完成 react-admin 项目
 - [ ] 每月发布一篇尽可能高质量的文章，同步发布掘金,CSDN,Github,公众号完善后可发
 - [ ] 继续学习常用算法
-- [ ] 深入学习Typescript
+- [ ] 深入学习 Typescript
 - [ ] 完成一个简易微服务系统（目标：了解微服务架构）
-- [ ] 继续熟悉原生js（贯穿整个工作学习时间，始终做到从how->why）
+- [ ] 继续熟悉原生 js（贯穿整个工作学习时间，始终做到从 how->why）
+- [ ] 前端自动化部署相关实践(Jenkins)
+- [ ] Restful 总结
