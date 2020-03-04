@@ -16,3 +16,16 @@
 // 使用dom将当前节点value改为null
 inputDom.value = null;
 ```
+
+4. 使用一些运算符将函数变为表达式
+
+```
+// 这样执行是报错的，无法解析js
+function(){}()
+
+// 添加一些运算符把函数转变为函数表达式
+(function(){})()
+!function(){}()
++function(){}()
+~function(){}()
+```
