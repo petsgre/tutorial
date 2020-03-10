@@ -41,6 +41,9 @@ git branch --set-upstream-to=origin/<local_branch> <origin_branch>
    或者
    使用 git checkout --theirs <file>;git add
 
+- git merge --squash 合并分支的时候 合并commit
+
+  这样就可以在开发的时候任意提交，然后在合并的时候重新提交一个总的commit就可以了
 
 - git commit --date="Jan 6 10:10:10 2020 +0800"
 
