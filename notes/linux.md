@@ -60,3 +60,7 @@ location / {
 10. 使用more分页查看命令行内容
 
 > xxx command | more
+
+11. 打开docker查看目录
+
+> docker exec -it containerID /bin/bash
