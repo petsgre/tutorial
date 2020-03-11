@@ -25,3 +25,7 @@
 12. ubuntu undo redo 快捷键  ，不使用 command+z,而是用 C+_
 
 13. M-x ==> find-grep 在当前目录下全局搜索
+
+14. dired模式下 取消标记 d 标记删除  u 取消标记
+
+15. dired模式下 复制文件  使用大写 C 复制并命名
