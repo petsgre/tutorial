@@ -2,4 +2,6 @@ Small Tasks:
 
 2020.3.12:
 
-- [ ] 尝试git hooks 
+- [x] 尝试git hooks
+
+- [ ] 尝试 cdn
