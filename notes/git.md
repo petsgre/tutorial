@@ -59,3 +59,15 @@ git branch --set-upstream-to=origin/<local_branch> <origin_branch>
 
 > git config --global core.quotepath false
 
+
+- git 删除远端分支
+
+  git branch -r -d origin/xxx
+  git push origin :xxx
+
+
+- git 创建远端分支
+
+  git checkout -b xxx
+  git push origin xxx
+  git branch --set-upstream.....
