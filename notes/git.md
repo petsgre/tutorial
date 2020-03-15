@@ -68,6 +68,6 @@ git branch --set-upstream-to=origin/<local_branch> <origin_branch>
 
 - git 创建远端分支
 
-  git checkout -b xxx
-  git push origin xxx
-  git branch --set-upstream.....
+git checkout -b xxx
+git push origin xxx
+git branch --set-upstream.....
