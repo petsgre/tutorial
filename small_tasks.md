@@ -17,3 +17,5 @@ Small Tasks:
 - [ ] 使用配置和动态组件的思想 实践 vue组件封装，这个一定要做！！！
 
 - [ ] 实践webpack打包优化组合拳 link:https://mp.weixin.qq.com/s/1BdKGW43MqWWsdQJ7MYI7w
+
+- [ ] 实践前端自动化部署 jenkins之类的

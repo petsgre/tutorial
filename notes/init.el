@@ -4,13 +4,14 @@
 	     '("melpa" . "https://melpa.org/packages/"))
 
 (package-initialize)
+
 ;; 使用use-package下载一些包
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
   (package-install 'use-package))
 
 ;; 将询问语改成 y和n简写
-(fset yes-or-no-p 'y-or-n-p)
+;;(fset yes-or-no-p 'y-or-n-p)
 
 ;; 使用f5刷新
 (global-set-key (kbd "<f5>") 'revert-buffer)
@@ -18,6 +19,7 @@
 ;; try可以临时使用这个包，再次重启emacs会删除掉使用try安装的包
 (use-package try
   :ensure t)
+
 ;; 使用which key 在输入 C-x时会有命令提示
 (use-package which-key
   :ensure t
@@ -76,3 +78,46 @@
   :config (load-theme 'zenburn t))
 ;; 设置字体格式 describe-font 获取描述文件
 (set-default-font "-*-Monaco-normal-normal-normal-*-16-*-*-*-m-0-iso10646-1")
+
+;; 添加redo undo 树
+(use-package undo-tree
+  :ensure t
+  :init
+  (global-undo-tree-mode))
+
+;; 设置打开新窗口默认在右边
+(setq
+ split-width-threshold 0
+ split-height-threshold nil)
+
+;; 选择括号中间的内容
+(use-package expand-region
+  :ensure t
+  :config
+  (global-set-key (kbd "C-=") 'er/expand-region))
+
+(require 'prettier-js)
+
+;; 添加跳转到定义
+(use-package dumb-jump
+  :bind (("M-g o" . dumb-jump-go-other-window)
+         ("M-g j" . dumb-jump-go)
+         ("M-g b" . dumb-jump-back)
+         ("M-g i" . dumb-jump-go-prompt)
+         ("M-g x" . dumb-jump-go-prefer-external)
+         ("M-g z" . dumb-jump-go-prefer-external-other-window))
+  :config (setq dumb-jump-selector 'ivy) ;; (setq dumb-jump-selector 'helm)
+  :ensure)
+
+;; 设置项目
+(use-package projectile
+  :ensure t
+  :config
+  (projectile-global-mode)
+  (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+  (projectile-mode +1)
+  (setq projectile-mode-line
+        '(:eval (format " [%s]" (projectile-project-name))))
+  (setq projectile-remember-window-configs t)
+  (setq projectile-completion-system 'ivy))
