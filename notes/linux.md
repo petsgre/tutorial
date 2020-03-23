@@ -64,3 +64,9 @@ location / {
 11. 打开docker查看目录
 
 > docker exec -it containerID /bin/bash
+
+12. ssh copy id
+
+```
+ssh-copy-id -i .ssh/id_rsa.pub -p 22 root@1.1.1.1
+```
