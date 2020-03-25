@@ -71,3 +71,7 @@ git branch --set-upstream-to=origin/<local_branch> <origin_branch>
 git checkout -b xxx
 git push origin xxx
 git branch --set-upstream.....
+
+- git revert到已经merge之前的代码(拯救已经merge的错误)
+
+git revert -m 1 <merge时候的commit版本号>
