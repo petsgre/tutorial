@@ -13,6 +13,10 @@
 ;; 将询问语改成 y和n简写
 ;;(fset yes-or-no-p 'y-or-n-p)
 
+;; 显示行号
+(global-linum-mode 1)
+(setq linum-format "%d:")
+
 ;; 使用f5刷新
 (global-set-key (kbd "<f5>") 'revert-buffer)
 
@@ -121,3 +125,14 @@
         '(:eval (format " [%s]" (projectile-project-name))))
   (setq projectile-remember-window-configs t)
   (setq projectile-completion-system 'ivy))
+
+(global-set-key (kbd "C-x C-/") 'comment-or-uncomment-region)
+
+;; markdow preview
+;; (use-package markdown-mode
+;;   :ensure t
+;;   :commands (markdown-mode gfm-mode)
+;;   :mode (("README\\.md\\'" . gfm-mode)
+;;          ("\\.md\\'" . markdown-mode)
+;;          ("\\.markdown\\'" . markdown-mode))
+;;   :init (setq markdown-command "multimarkdown"))
