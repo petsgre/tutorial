@@ -29,3 +29,10 @@ function(){}()
 +function(){}()
 ~function(){}()
 ```
+
+5. 逗号操作符
+
+```
+var a = 1;
+var b = (a++,a); // 2
+```
