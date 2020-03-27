@@ -77,3 +77,10 @@ ssh-copy-id -i .ssh/id_rsa.pub -p 22 root@1.1.1.1
 ps -ef | grep trojan  第二项是 PID
 kill -9 PID
 ```
+
+14. terminal切换到zsh
+
+```
+zsh --version
+chsh -s /bin/zsh
+```
