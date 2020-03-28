@@ -36,3 +36,7 @@ function(){}()
 var a = 1;
 var b = (a++,a); // 2
 ```
+
+6. 子类 constructor 中调用 super() 其实就是调用父类的constructor函数
+
+	如果父类constructor有参数，那么super(...agrs)也要添加参数
