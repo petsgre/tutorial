@@ -40,3 +40,7 @@ var b = (a++,a); // 2
 6. 子类 constructor 中调用 super() 其实就是调用父类的constructor函数
 
 	如果父类constructor有参数，那么super(...agrs)也要添加参数
+
+7. setTimeout 最小时间 
+
+	计算机一般是 60Hz的频率，即 1秒钟 60次渲染  那么渲染一次的时间就是  1000/60  约等于 16.6
