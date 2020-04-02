@@ -19,3 +19,5 @@ Small Tasks:
 - [ ] 实践webpack打包优化组合拳 link:https://mp.weixin.qq.com/s/1BdKGW43MqWWsdQJ7MYI7w
 
 - [ ] 实践前端自动化部署 jenkins之类的
+
+- [ ] docker的实践写个文章列出来，现在又忘了！！！
