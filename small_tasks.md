@@ -21,3 +21,5 @@ Small Tasks:
 - [ ] 实践前端自动化部署 jenkins之类的
 
 - [ ] docker的实践写个文章列出来，现在又忘了！！！
+
+- [ ] https://github.com/phodal/microfrontends  微前端的方案，要找时间实施一遍
