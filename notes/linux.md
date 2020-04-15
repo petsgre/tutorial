@@ -56,6 +56,8 @@ location / {
 
 >  lsof -i tcp:9000
 >  kill pid
+>  kill -9 强制执行
+>  kill -1 等同于 control+c
 
 10. 使用more分页查看命令行内容
 
