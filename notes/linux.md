@@ -1,3 +1,4 @@
+
 # 文章
 
 1. [图解SSH原理](https://www.jianshu.com/p/33461b619d53)
@@ -85,4 +86,24 @@ kill -9 PID
 ```
 zsh --version
 chsh -s /bin/zsh
+```
+
+15. 切换root，修改密码
+
+```
+sudo -i //切换到root账户
+sudo su // 切换到root
+su username 切换到其他用户
+// 默认谷歌云没有打开root密码登录
+vi /etc/ssh/sshd_config
+
+# Authentication:
+PermitRootLogin yes //默认为no，需要开启root用户访问改为yes
+
+# Change to no to disable tunnelled clear text passwords
+PasswordAuthentication yes //默认为no，改为yes开启密码登陆
+
+passwd root // 修改root密码
+
+/etc/init.d/ssh restart // 重启ssh服务
 ```
