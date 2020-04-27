@@ -36,6 +36,12 @@
 1. 401:没有带权限标志；403:带了权限标志，但是权限不足
 2. 为什么 form 表单可以跨域，其实本质上 http 请求都是可以跨域的，只是浏览器对 ajax 做了限制，使得返回的数据 js 无法读取，而表单提交，不会返回数据，并且默认行为会刷新到 action 的 url，所以浏览器就不会对他做限制
 3. yarn --env.xxx=xxx 给webpack传参
+4. lodash debounce 首次执行不延迟
+```
+leading-false，trailing-true：默认情况，即在延时结束后才会调用函数
+leading-true，trailing-true：在延时开始时就调用，延时结束后也会调用
+leading-true, trailing-false：只在延时开始时调用
+```
 
 # 需总结
 
