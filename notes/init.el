@@ -20,8 +20,21 @@
 ;; 使用f5刷新
 (global-set-key (kbd "<f5>") 'revert-buffer)
 
+;; (global-set-key (kbd "<s-up>") 'shrink-window)
+;; (global-set-key (kbd "<s-down>") 'enlarge-window)
+;; (global-set-key (kbd "C-x =") 'shrink-window-horizontally)
+;; (global-set-key (kbd "C-x -") 'enlarge-window-horizontally)
+
 ;; try可以临时使用这个包，再次重启emacs会删除掉使用try安装的包
 (use-package try
+  :ensure t)
+
+;; (use-package iedit
+;;   :ensure t
+;;   :config
+;;   ((global-set-key "\C-;" 'iedit-mode)))
+
+(use-package iedit
   :ensure t)
 
 ;; 使用which key 在输入 C-x时会有命令提示
@@ -98,7 +111,7 @@
 (use-package expand-region
   :ensure t
   :config
-  (global-set-key (kbd "C-=") 'er/expand-region))
+  (global-set-key (kbd "s-d") 'er/expand-region))
 
 (require 'prettier-js)
 
@@ -114,25 +127,50 @@
   :ensure)
 
 ;; 设置项目
+;; (use-package projectile
+;;   :ensure t
+;;   :config
+;;   (projectile-global-mode)
+;;   (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+;;   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+;;   (projectile-mode +1)
+;;   (setq projectile-mode-line
+;;         '(:eval (format " [%s]" (projectile-project-name))))
+;;   (setq projectile-remember-window-configs t)
+;;   (setq projectile-completion-system 'ivy))
+
+;; projectile
 (use-package projectile
   :ensure t
   :config
   (projectile-global-mode)
   (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
-  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
-  (projectile-mode +1)
-  (setq projectile-mode-line
-        '(:eval (format " [%s]" (projectile-project-name))))
-  (setq projectile-remember-window-configs t)
   (setq projectile-completion-system 'ivy))
 
-(global-set-key (kbd "C-x C-/") 'comment-or-uncomment-region)
+;; (use-package counsel-projectile
+;; :ensure t
+;; :config
+;; (counsel-projectile-mode))
 
-;; markdow preview
-;; (use-package markdown-mode
-;;   :ensure t
-;;   :commands (markdown-mode gfm-mode)
-;;   :mode (("README\\.md\\'" . gfm-mode)
-;;          ("\\.md\\'" . markdown-mode)
-;;          ("\\.markdown\\'" . markdown-mode))
-;;   :init (setq markdown-command "multimarkdown"))
+(global-set-key (kbd "C-x C-/") 'comment-or-uncomment-region)
+(global-set-key (kbd "<s-backspace>") 'kill-whole-line)
+
+
+(defun enable-minor-mode (my-pair)
+  "Enable minor mode if filename match the regexp.  MY-PAIR is a cons cell (regexp . minor-mode)."
+  (if (buffer-file-name)
+      (if (string-match (car my-pair) buffer-file-name)
+	  (funcall (cdr my-pair)))))
+
+(use-package web-mode
+  :ensure
+  :custom
+  (web-mode-markup-indent-offset 2)
+  (web-mode-css-indent-offset 2)
+  (web-mode-code-indent-offset 2)
+  :init
+  (add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode)))
+
+(use-package magit ; TODO key bindings and such
+  :ensure t)
