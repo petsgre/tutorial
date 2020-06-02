@@ -5,6 +5,15 @@
 
 (package-initialize)
 
+(tool-bar-mode -1)
+
+;; 进入全屏
+(defun fullscreen ()
+      (interactive)
+      (set-frame-parameter nil 'fullscreen
+                           (if (frame-parameter nil 'fullscreen) nil 'fullboth)))
+(global-set-key (kbd "<s-return>") 'fullscreen)
+
 ;; 使用use-package下载一些包
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
@@ -19,6 +28,7 @@
 
 ;; 使用f5刷新
 (global-set-key (kbd "<f5>") 'revert-buffer)
+
 
 ;; (global-set-key (kbd "<s-up>") 'shrink-window)
 ;; (global-set-key (kbd "<s-down>") 'enlarge-window)
@@ -113,7 +123,6 @@
   :config
   (global-set-key (kbd "s-d") 'er/expand-region))
 
-(require 'prettier-js)
 
 ;; 添加跳转到定义
 (use-package dumb-jump
@@ -155,22 +164,114 @@
 (global-set-key (kbd "C-x C-/") 'comment-or-uncomment-region)
 (global-set-key (kbd "<s-backspace>") 'kill-whole-line)
 
+;; 上下移动选中的区域或者行
+(defun move-text-internal (arg)
+   (cond
+    ((and mark-active transient-mark-mode)
+     (if (> (point) (mark))
+            (exchange-point-and-mark))
+     (let ((column (current-column))
+              (text (delete-and-extract-region (point) (mark))))
+       (forward-line arg)
+       (move-to-column column t)
+       (set-mark (point))
+       (insert text)
+       (exchange-point-and-mark)
+       (setq deactivate-mark nil)))
+    (t
+     (beginning-of-line)
+     (when (or (> arg 0) (not (bobp)))
+       (forward-line)
+       (when (or (< arg 0) (not (eobp)))
+            (transpose-lines arg))
+       (forward-line -1)))))
+
+(defun move-text-down (arg)
+   "Move region (transient-mark-mode active) or current line
+  arg lines down."
+   (interactive "*p")
+   (move-text-internal arg))
+
+(defun move-text-up (arg)
+   "Move region (transient-mark-mode active) or current line
+  arg lines up."
+   (interactive "*p")
+   (move-text-internal (- arg)))
+
+(global-set-key [\M-\S-up] 'move-text-up)
+(global-set-key [\M-\S-down] 'move-text-down)
 
 (defun enable-minor-mode (my-pair)
   "Enable minor mode if filename match the regexp.  MY-PAIR is a cons cell (regexp . minor-mode)."
   (if (buffer-file-name)
       (if (string-match (car my-pair) buffer-file-name)
 	  (funcall (cdr my-pair)))))
+(defun my/web-vue-setup()
+  "Setup for js related."
+  (message "web-mode use vue related setup")
+  (setup-tide-mode)
+  (emmet-mode)
+  (prettier-js-mode)
+  (flycheck-add-mode 'javascript-eslint 'web-mode)
+  (flycheck-select-checker 'javascript-eslint)
+  (my/use-eslint-from-node-modules)
+  (add-to-list (make-local-variable 'company-backends)
+               '(comany-tide company-web-html company-css company-files))
+  )
+
+(defun my/use-eslint-from-node-modules ()
+  "Use local eslint from node_modules before global."
+  (let* ((root (locate-dominating-file
+                (or (buffer-file-name) default-directory)
+                "node_modules"))
+         (eslint (and root
+                      (expand-file-name "node_modules/eslint/bin/eslint.js"
+                                        root))))
+    (when (and eslint (file-executable-p eslint))
+      (setq-local flycheck-javascript-eslint-executable eslint))))
+
+(require 'prettier-js)
+
+(use-package emmet-mode
+  :ensure t
+  :commands emmet-mode
+  :hook
+  (sgml-mode . emmet-mode)
+  (web-mode  . emmet-mode)
+  (css-mode  . emmet-mode))
 
 (use-package web-mode
-  :ensure
-  :custom
-  (web-mode-markup-indent-offset 2)
-  (web-mode-css-indent-offset 2)
-  (web-mode-code-indent-offset 2)
-  :init
-  (add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
-  (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode)))
+  :ensure t
+  :mode ("\\.html\\'" "\\.vue\\'")
+  :config
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2)
+  (add-hook 'web-mode-hook 'prettier-js-mode)
+  (setq web-mode-enable-current-element-highlight t)
+  (setq web-mode-enable-css-colorization t)
+  (set-face-attribute 'web-mode-html-tag-face nil :foreground "royalblue")
+  (set-face-attribute 'web-mode-html-attr-name-face nil :foreground "powderblue")
+  (set-face-attribute 'web-mode-doctype-face nil :foreground "lightskyblue")
+  (setq web-mode-content-types-alist
+        '(("vue" . "\\.vue\\'")))
+  ;; (use-package company-web
+  ;;   :ensure t)
+  ;; (add-hook 'web-mode-hook (lambda()
+  ;;                            (cond ((equal web-mode-content-type "html")
+  ;;                                   (my/web-html-setup))
+  ;;                                  ((member web-mode-content-type '("vue"))
+  ;;                                   (my/web-vue-setup))
+  ;;                                  )))
+  )
+
 
 (use-package magit ; TODO key bindings and such
   :ensure t)
+
+(use-package lsp-mode
+  :ensure t)
+
+(use-package flycheck
+  :ensure t
+  :init (global-flycheck-mode))
