@@ -7,6 +7,20 @@
 
 (tool-bar-mode -1)
 
+
+(delete-selection-mode 1)
+(delete-selection-mode nil)
+
+(setq-default cursor-type 'bar)
+
+(use-package multiple-cursors
+  :ensure t)
+
+(use-package awesome-pair
+  :ensure t)
+
+(global-set-key (kbd "s-d") 'mc/mark-next-like-this)
+
 ;; 进入全屏
 (defun fullscreen ()
       (interactive)
@@ -121,7 +135,7 @@
 (use-package expand-region
   :ensure t
   :config
-  (global-set-key (kbd "s-d") 'er/expand-region))
+  (global-set-key (kbd "s-=") 'er/expand-region))
 
 
 ;; 添加跳转到定义
@@ -275,3 +289,4 @@
 (use-package flycheck
   :ensure t
   :init (global-flycheck-mode))
+
