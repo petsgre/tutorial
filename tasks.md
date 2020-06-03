@@ -23,3 +23,10 @@ Small Tasks:
 - [ ] docker的实践写个文章列出来，现在又忘了！！！
 
 - [ ] https://github.com/phodal/microfrontends  微前端的方案，要找时间实施一遍
+
+
+
+emacs待补充插件
+
+1. html标签展开收起
+2. flycheck 配置 显示eslint提示
