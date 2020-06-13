@@ -28,5 +28,8 @@ Small Tasks:
 
 emacs待补充插件
 
-1. html标签展开收起
-2. flycheck 配置 显示eslint提示
+~~1. html标签展开收起~~
+~~2. flycheck 配置 显示eslint提示  （web-mode 貌似不支持flycheck）~~
+~~3. 和vsc统一的格式化方案~~
+4. lsp-mode了解一下
+5. emacs GUI打开 path问题
