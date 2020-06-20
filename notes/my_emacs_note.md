@@ -43,3 +43,5 @@
 21. C-c C-n web-mode 定位到标签
 
 22. magit 查看当前行 log magit-blame 参数选 b
+
+23. make-directory 创建文件夹，如果出现同名的 C-x C-f 即可确定，不会被补全干扰 

@@ -32,4 +32,5 @@ emacs待补充插件
 ~~2. flycheck 配置 显示eslint提示  （web-mode 貌似不支持flycheck）~~
 ~~3. 和vsc统一的格式化方案~~
 4. lsp-mode了解一下
+5. tide-mode了解一下
 5. emacs GUI打开 path问题
