@@ -34,3 +34,4 @@ emacs待补充插件
 4. lsp-mode了解一下
 5. tide-mode了解一下
 5. emacs GUI打开 path问题
+6. 全局搜索 并且 ！！替换！！
