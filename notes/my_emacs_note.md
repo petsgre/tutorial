@@ -45,3 +45,9 @@
 22. magit 查看当前行 log magit-blame 参数选 b
 
 23. make-directory 创建文件夹，如果出现同名的 C-x C-f 即可确定，不会被补全干扰 
+
+24. 全局替换
+    1. C-j git全局查找
+    2. C-x C-o 调出 occur
+    3. C-x C-q 进入编辑模式
+    4. 编辑完保存退出
