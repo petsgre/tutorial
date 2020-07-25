@@ -52,5 +52,6 @@
     3. C-x C-q 进入编辑模式
     4. 编辑完保存退出
 
-
+25. term下如何删除 backspace
+    使用 fn + backspace 删除文本
 
