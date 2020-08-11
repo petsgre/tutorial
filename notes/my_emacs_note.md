@@ -55,3 +55,6 @@
 25. term下如何删除 backspace
     使用 fn + backspace 删除文本
 
+
+26. 很好用
+    C-u C-c k 在指定目录搜索
