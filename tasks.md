@@ -24,11 +24,12 @@ Small Tasks:
 
 - [ ] https://github.com/phodal/microfrontends  微前端的方案，要找时间实施一遍
 
+- [ ] 类似swiper的 滑动不拖拽屏幕的效果
 
 
 emacs待补充插件
 
-~~1. html标签展开收起~~
+~~1. html标签展开收起~~ C-c C-f
 ~~2. flycheck 配置 显示eslint提示  （web-mode 貌似不支持flycheck）~~
 ~~3. 和vsc统一的格式化方案~~
 4. lsp-mode了解一下
