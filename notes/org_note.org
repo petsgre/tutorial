@@ -1,4 +1,26 @@
 * Org mode note
 
-** 快捷键解释
+*** 快捷键解释
+
 1. C-c C-l 插入和编辑一个link
+
+2. C-c C-t 切换TODO状态
+
+3. M-RET 创建一个标题
+
+4. 插入代码块
+
+   # +BEGIN_SRC
+   one line
+   # +END_SRC
+
+5. C-c C-x C-f */_ 加重字体
+
+6. 
+
+
+
+
+
+
+

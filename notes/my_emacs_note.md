@@ -61,3 +61,5 @@
 
 27. C-h b
     显示快捷键解释
+
+28. C-h m 查看当前buffer mode
