@@ -1,0 +1,4 @@
+* Org mode note
+
+** 快捷键解释
+1. C-c C-l 插入和编辑一个link
