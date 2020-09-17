@@ -8,17 +8,16 @@
 
 3. M-RET 创建一个标题
 
-4. 插入代码块
+4. asd
 
    # +BEGIN_SRC
    one line
    # +END_SRC
 
    模板快捷键
-
-eg: <e + TAB
+   eg: <e + TAB
    
-#+BEGIN_SRC 
+   #+BEGIN_SRC 
 s	#+BEGIN_SRC ... #+END_SRC
 e	#+BEGIN_EXAMPLE ... #+END_EXAMPLE
 q	#+BEGIN_QUOTE ... #+END_QUOTE
@@ -32,19 +31,20 @@ a	#+BEGIN_ASCII ... #+END_ASCII
 A	#+ASCII:
 i	#+INDEX: line
 I	#+INCLUDE: line
-#+END_SRC
+   #+END_SRC
 
-5. C-c C-x C-f */_ 加重字体
+5. 插入代码块
 
-   *文本*
-   =文本=
-   ~asd~
-   _asd_
-   +asd+
-   /asd/
+6. C-c C-x C-f */_ 加重字体
 
-6. 
+   - *文本*
+   - =文本= 行内代码块
+   - ~asd~ 行内代码块
+   - _asd_
+   - +asd+
+   - /asd/
 
+7. 
 
 
 
