@@ -113,3 +113,10 @@ passwd root // 修改root密码
 Ctrl + R, 如果你未在 terminal 下用过, 我想你应该也不会用它.
 Ctrl + T, 快速的过滤当前目录下面的任意一个文件., 例如你可以: nano => Ctrl +T 关键字
 Alt + C, 快速进入一个子目录.
+
+17. shell find 
+
+> find . -type f | grep too
+
+18. 
+

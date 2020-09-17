@@ -30,7 +30,7 @@ Emacs的教程比较多，如果你熟练使用google，基本一搜一大堆。
 
 下面我会为大家介绍web相关的配置
 
-[[https:melpa.org][melpa.org]] 是Emacs的一个资源托管平台，类似于atm,npm这类东西
+[[https:melpa.org][melpa.org]] 是Emacs的一个资源托管平台，类似于 ~atm~， ~npm~ 这类东西
 
 *常用mode*
 
