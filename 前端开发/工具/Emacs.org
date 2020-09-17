@@ -16,7 +16,7 @@ Emacs的教程比较多，如果你熟练使用google，基本一搜一大堆。
 
 我是一名web前端开发人员，机缘巧合碰到同事在用Emacs，这里就按照web的要求，配置了一套emacs的前端开发配置。
 
-如果Emcas你还没有接触过，你可以先看一些Emacs基础的教程，他的学习成本是相对高一点，但是物超所值，当真正上手之后，开发效率会上升一个层次，逼格也会提高一点，哈哈。这里给出以下Emacs的学习地址
+如果Emcas你还没有接触过，你可以先看一些Emacs基础的教程，他的学习成本是相对高一点，但是物超所值，当真正上手之后，开发效率会上升一个层次，里给出以下Emacs的学习地址
 
 [[https://www.gnu.org/software/emacs/][官网]]
 
@@ -24,21 +24,25 @@ Emacs的教程比较多，如果你熟练使用google，基本一搜一大堆。
 
 [[https://cestlaz.github.io/post/using-emacs-74-eglot/][Mike Zamansky Using Emacs]]
 
+#+BEGIN_QUOTE
 还有b站的一些视频学习资料，大家可以自己去搜一搜，刚刚接触emcas我建议还是多看一些视频资料，看看基础的用法。
+#+END_QUOTE
 
-*** Web 配置
+*** Web 配置(基础配置可以参考我的配置 [[https://github.com/petsgre/emacs-config][https://github.com/petsgre/emacs-config]] )
 
 下面我会为大家介绍web相关的配置
 
 [[https:melpa.org][melpa.org]] 是Emacs的一个资源托管平台，类似于atm,npm这类东西
 
-
-常用mode
+*常用mode*
 
 | mode     | 作用       | 链接                                |
 |----------+------------+-------------------------------------|
 | flycheck | eslint检查 | https://www.flycheck.org/en/latest/ |
 
 *** 测试标题
-    
+
+#+BEGIN_QUOTE
 到底会不会有前置空间
+#+END_QUOTE    
+
