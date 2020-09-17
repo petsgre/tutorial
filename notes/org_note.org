@@ -14,6 +14,26 @@
    one line
    # +END_SRC
 
+   模板快捷键
+
+eg: <e + TAB
+   
+#+BEGIN_SRC 
+s	#+BEGIN_SRC ... #+END_SRC
+e	#+BEGIN_EXAMPLE ... #+END_EXAMPLE
+q	#+BEGIN_QUOTE ... #+END_QUOTE
+v	#+BEGIN_VERSE ... #+END_VERSE
+c	#+BEGIN_CENTER ... #+END_CENTER
+l	#+BEGIN_LaTeX ... #+END_LaTeX
+L	#+LaTeX:
+h	#+BEGIN_HTML ... #+END_HTML
+H	#+HTML:
+a	#+BEGIN_ASCII ... #+END_ASCII
+A	#+ASCII:
+i	#+INDEX: line
+I	#+INCLUDE: line
+#+END_SRC
+
 5. C-c C-x C-f */_ 加重字体
 
 6. 
