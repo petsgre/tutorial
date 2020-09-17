@@ -53,3 +53,7 @@ Emacs的教程比较多，如果你熟练使用google，基本一搜一大堆。
 #+RESULTS:
 : 3
 
+[[./emacsVSvscode.jpg]]
+
+
+
