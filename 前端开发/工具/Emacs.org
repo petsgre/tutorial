@@ -37,23 +37,3 @@ Emacs的教程比较多，如果你熟练使用google，基本一搜一大堆。
 | mode     | 作用       | 链接                                |
 |----------+------------+-------------------------------------|
 | flycheck | eslint检查 | https://www.flycheck.org/en/latest/ |
-
-*** 测试标题
-
-#+BEGIN_QUOTE
-到底会不会有前置空间
-#+END_QUOTE    
-
-#+BEGIN_SRC js
-  const a = 1
-  var asd = 2
-  return a + asd
-#+END_SRC
-
-#+RESULTS:
-: 3
-
-[[./emacsVSvscode.jpg]]
-
-
-
