@@ -1,6 +1,6 @@
 * Org mode note
 
-*** 快捷键解释
+*** 快捷键解释 
 
 1. C-c C-l 插入和编辑一个link
 
@@ -8,14 +8,17 @@
 
 3. M-RET 创建一个标题
 
-4. asd
+4. M-S-RET 创建一个带checkbox的条目
+   C-c C-c toggle checkbox
 
-   # +BEGIN_SRC
+5. 代码块
+   #+begin_quote
    one line
-   # +END_SRC
+   #+end_quote
 
-   模板快捷键
-   eg: <e + TAB
+   : 模板快捷键
+   eg: <e + TAB (这是旧版org-mode的快捷键)
+   最新org mode  C-c C-,
    
    #+BEGIN_SRC 
 s	#+BEGIN_SRC ... #+END_SRC
@@ -33,21 +36,18 @@ i	#+INDEX: line
 I	#+INCLUDE: line
    #+END_SRC
 
-5. 插入代码块
+6. 插入代码块
 
-6. C-c C-x C-f */_ 加重字体
+7. C-c C-x C-f */_ 加重字体
 
-   - *文本*
-   - =文本= 行内代码块
-   - ~asd~ 行内代码块
-   - _asd_
-   - +asd+
-   - /asd/
+   1. *文本*
+   2. [ ] 
+   3. =文本= 行内代码块
+   4. ~asd~ 行内代码块
+   5. _asd_
+   6. +asd+
+   7. /asd/
 
-7. 
-
-
-
-
+8. 
 
 

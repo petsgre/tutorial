@@ -24,9 +24,7 @@ Emacs的教程比较多，如果你熟练使用google，基本一搜一大堆。
 
 [[https://cestlaz.github.io/post/using-emacs-74-eglot/][Mike Zamansky Using Emacs]]
 
-#+BEGIN_QUOTE
-还有b站的一些视频学习资料，大家可以自己去搜一搜，刚刚接触emcas我建议还是多看一些视频资料，看看基础的用法。
-#+END_QUOTE
+: 还有b站的一些视频学习资料，大家可以自己去搜一搜，刚刚接触emcas我建议还是多看一些视频资料，看看基础的用法。
 
 *** Web 配置(基础配置可以参考我的配置 [[https://github.com/petsgre/emacs-config][https://github.com/petsgre/emacs-config]] )
 
@@ -45,4 +43,13 @@ Emacs的教程比较多，如果你熟练使用google，基本一搜一大堆。
 #+BEGIN_QUOTE
 到底会不会有前置空间
 #+END_QUOTE    
+
+#+BEGIN_SRC js
+  const a = 1
+  var asd = 2
+  return a + asd
+#+END_SRC
+
+#+RESULTS:
+: 3
 
