@@ -36,6 +36,13 @@ I	#+INCLUDE: line
 
 5. C-c C-x C-f */_ 加重字体
 
+   *文本*
+   =文本=
+   ~asd~
+   _asd_
+   +asd+
+   /asd/
+
 6. 
 
 
