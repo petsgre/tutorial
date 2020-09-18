@@ -80,7 +80,8 @@ git revert -m 1 <merge时候的commit版本号>
 
     1. 执行 git fsck --lost-found
        然后在 .git/lost-found 目录里面找回丢失的文件
-    2. find .git/objects -type f  这里记录了之前的 ~add~ 操作的记录
+       
+    2. find .git/objects -type f  这里记录了之前的 `add` 操作的记录
        eg:
        ```
            .git/objects/00/8b61d60cc4829d438e54a4073f2fdd4b62ae74
@@ -88,5 +89,9 @@ git revert -m 1 <merge时候的commit版本号>
            .git/objects/d5/0d6c1c2e8494ef1fa61404325b90d8a0f32423
            .git/objects/10/8a0a5571dd613691ab0af4c3c4fc691b7e2e06
        ```
-       然后 git cat-file -p 008b61d60cc4829d438e54a4073f2fdd4b62ae74
-       在终端复制出丢失的文本
+       然后
+       
+       git cat-file -p 008b61d60cc4829d438e54a4073f2fdd4b62ae74
+       git cat-file -p <directory_name><commit_id>
+       
+       最后在终端复制出丢失的文本
