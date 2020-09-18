@@ -92,6 +92,7 @@ git revert -m 1 <merge时候的commit版本号>
        然后
        
        git cat-file -p 008b61d60cc4829d438e54a4073f2fdd4b62ae74
+       
        git cat-file -p <directory_name><commit_id>
        
        最后在终端复制出丢失的文本
