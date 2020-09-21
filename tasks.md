@@ -27,6 +27,7 @@ Small Tasks:
 - [ ] 类似swiper的 滑动不拖拽屏幕的效果
 
 - [ ] chrome 火焰图 学习使用
+- [ ] cancel token 的使用
 
 
 emacs待补充插件
