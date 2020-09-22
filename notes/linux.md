@@ -118,5 +118,7 @@ Alt + C, 快速进入一个子目录.
 
 > find . -type f | grep too
 
-18. 
+18. 查看大小
+
+> du -h -d=1 ./
 
