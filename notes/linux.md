@@ -122,3 +122,6 @@ Alt + C, 快速进入一个子目录.
 
 > du -h -d=1 ./
 
+19. vim undo redo
+
+> 预览模式下 ==u== 代表undo; ==C-r== 代表redo
