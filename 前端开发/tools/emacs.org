@@ -6,17 +6,19 @@ Emacs的教程比较多，如果你熟练使用google，基本一搜一大堆。
 
 事实上，很少人会使用emacs做web开发，尤其是国内，emacs更多的是用在linux开发上面，如果你是纯做web开发的，建议还是直接使用vscode等开箱即用的工具。
 
-但如果你喜欢在一个终端应付不同的工作环境，emcas确实是一个不错的选择。在emacs圈子里，大多数人不只用emacs做开发工作，他被称为"神之编辑器"，相比于vim"编辑器之神"，他似乎更加让人感觉牛逼一些。
+但如果你喜欢在一个终端应付不同的工作环境，emcas却是一个不错的选择。在emacs圈子里，大多数人不只用emacs做开发工作，他被称为"神之编辑器"，相比于vim"编辑器之神"，他似乎更加厉害一些。
 
 我们常说emacs是一个伪装成编辑器的"操作系统"，原因是它的功能已经远远超越了编辑器的范畴，他可以写文档，记笔记，看图片，看视频，发邮件，各种语言编程，登录电报聊天等等。。
 
-几乎所有东西都可以做，对于喜欢将多端东西集成于一点的玩家来说简直是不二选择。并且，学习Emacs可以让自己更加熟悉操作系统，终端等。
+几乎所有东西都可以做，对于喜欢将多端东西集成于一点的玩家来说简直是不二选择。并且，学习emacs可以让自己更加熟悉操作系统，终端，命令等。
 
-而对于我来说，emcas可以提升我的开发效率，丰富的快键键，简单的项目管理，无敌的模糊搜索功能，简直让开发体验飞上了天。
+而对于我来说，emcas可以提升我的开发效率，丰富的快键键，简单的项目管理，高效的模糊搜索功能，简直让开发体验飞上了天。
 
-我是一名web前端开发人员，机缘巧合碰到同事在用Emacs，这里就按照web的要求，配置了一套emacs的前端开发配置。
+我是一名web前端开发人员，机缘巧合碰到同事在用emacs，这里就按照web的要求，配置了一套emacs的前端开发配置。
 
-如果Emcas你还没有接触过，你可以先看一些Emacs基础的教程，他的学习成本是相对高一点，但是物超所值，当真正上手之后，开发效率会上升一个层次，里给出以下Emacs的学习地址
+如果emcas你还没有接触过，你可以先看一些emacs基础的教程，他的学习成本是相对高一点，但是物超所值，当真正上手之后，开发效率会上升一个层次。
+
+一些emacs的学习地址：
 
 [[https://www.gnu.org/software/emacs/][官网]]
 
@@ -24,16 +26,67 @@ Emacs的教程比较多，如果你熟练使用google，基本一搜一大堆。
 
 [[https://cestlaz.github.io/post/using-emacs-74-eglot/][Mike Zamansky Using Emacs]]
 
-: 还有b站的一些视频学习资料，大家可以自己去搜一搜，刚刚接触emcas我建议还是多看一些视频资料，看看基础的用法。
+: 还有b站的一些视频学习资料，大家可以自己去搜一搜，刚刚接触emcas我建议还是多看一些视频资料，看看基础的用法(C-h t 是一定要看的)。
 
-*** Web 配置(基础配置可以参考我的配置 [[https://github.com/petsgre/emacs-config][https://github.com/petsgre/emacs-config]] )
+*** Web 配置(基础配置可以参考我的配置 [[https://github.com/petsgre/emacs-config][https://github.com/petsgre/emacs-config]])
 
 下面我会为大家介绍web相关的配置
 
-[[https:melpa.org][melpa.org]] 是Emacs的一个资源托管平台，类似于 ~atm~， ~npm~ 这类东西
+[[https:melpa.org][melpa.org]] 是Emacs的一个资源托管平台，类似于 ~atm~ ， ~npm~ 这类东西，所有要在配置文件开头加入下载源
 
-*常用mode*
+#+begin_src lisp
+;; 添加melpa资源
+(add-to-list 'package-archives
+	     '("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/") t)
+#+end_src
 
-| mode     | 作用       | 链接                                |
-|----------+------------+-------------------------------------|
-| flycheck | eslint检查 | https://www.flycheck.org/en/latest/ |
+[[https://github.com/jwiegley/use-package][use-package]] 是一个编写配置的简便方法，通过它编写配置可以不用提前下载，如果没有找到相关的插件，他会自动下载
+
+#+begin_src lisp
+  ;; example
+(use-package foo
+  :init
+  (setq foo-variable t)
+  :config
+  (foo-mode 1))
+#+end_src
+
+*** web开发所需mode
+
+| mode        | 作用                 | 链接                                       |
+|-------------+----------------------+--------------------------------------------|
+| flycheck    | eslint检查           | https://www.flycheck.org/en/latest/        |
+| emmet-mode  | html补全             | [[https://github.com/smihica/emmet-mode][https://github.com/smihica/emmet-mode]]      |
+| prettier-js | 代码格式化           | [[https://github.com/prettier/prettier-emacs][https://github.com/prettier/prettier-emacs]] |
+| lsp-mode    | 各种语言的服务协议   | [[https://github.com/emacs-lsp/lsp-mode][https://github.com/emacs-lsp/lsp-mode]]      |
+| web-mode    | 高亮html,css,js等    | [[https://github.com/fxbois/web-mode][https://github.com/fxbois/web-mode]]         |
+| tide-mode   | 可以协助跳转，高亮等 | [[https://github.com/ananthakumaran/tide][https://github.com/ananthakumaran/tide]]     |
+
+通过以上配置，就可以配置出基本的web开发环境了。
+
+但是为了更好的开发体验，我们还需要一些比较强有力的辅助mode
+
+*** 实用mode
+
+插件众多，这里只做列举，不详述。可能有些功能在其他编辑器里面已经是开箱即用的功能，有些则是emacs比较特有的。
+
+| mode             | 作用                                                           |
+|------------------+----------------------------------------------------------------|
+| multiple-cursors | 多点编辑                                                       |
+| which-key        | 快捷键提示                                                     |
+| swiper           | minibuffer的强力拓展                                           |
+| auto-complete    | 可以提示当前buffer或者最近输入的一些内容                       |
+| undo-tree        | 返回神器，可以记录当前buffer所有的undo redo                    |
+| projectile       | 便捷的项目管理,里面有很多好玩的内容(counsel-projectile-rg等等) |
+| magit            | 使用emacs的另一个借口                                          |
+| dumb-jump        | 跳转到定义，适用于大部分语言                                   |
+| vterm            | 在emacs中打开终端                                              |
+| fzf              | 模糊搜索神器，强烈推荐                                         |
+| yasnippet        | 自定义代码块                                                   |
+
+第一次配置肯定会碰到形形色色的问题，一般碰到问题不要气馁，多尝试，多google，总会有结果的。
+
+也有一部分大神搞出来一些接近开箱即用的配置(doom emacs,spacemacs等)，但我觉得游戏还是自己玩比较有意思。
+
+最后，如果有问题也可以来TG群问(需要科学上网, ~Emacs 中文~)，这也许是最快的一种途径，里面有很多大手子(大佬)会为你解答，不知道为什么他们称大佬为大手子。
+
