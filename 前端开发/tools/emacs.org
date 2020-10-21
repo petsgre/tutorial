@@ -26,7 +26,9 @@ Emacs的教程比较多，如果你熟练使用google，基本一搜一大堆。
 
 [[https://cestlaz.github.io/post/using-emacs-74-eglot/][Mike Zamansky Using Emacs]]
 
-: 还有b站的一些视频学习资料，大家可以自己去搜一搜，刚刚接触emcas我建议还是多看一些视频资料，看看基础的用法(C-h t 是一定要看的)。
+#+begin_quote
+还有b站的一些视频学习资料，大家可以自己去搜一搜，刚刚接触emcas我建议还是多看一些视频资料，看看基础的用法(C-h t 是一定要看的)。
+#+end_quote
 
 *** Web 配置(基础配置可以参考我的配置 [[https://github.com/petsgre/emacs-config][https://github.com/petsgre/emacs-config]])
 
