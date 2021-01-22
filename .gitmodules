@@ -1,3 +1,3 @@
-[submodule "submodule"]
-	path = submodule
+[submodule "src/services"]
+	path = src/services
 	url = git@github.com:petsgre/submodule.git
