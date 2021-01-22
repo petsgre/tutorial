@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content="(apple)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2 class="author">apple</h2><p class="date">Created: 2021-01-11 Mon 09:21</p>
+</section>
+<section id="table-of-contents"><div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#/slide-org6114e30">1. 前端开发技巧</a>
+<ul>
+<li><a href="#/slide-org12770ee">1.1. 编程技巧</a></li>
+<li><a href="#/slide-orgd7072ca">1.2. 调试技巧</a></li>
+<li><a href="#/slide-org6e7064a">1.3. 搜索技巧</a></li>
+<li><a href="#/slide-orgff13fa9">1.4. 与后端协调技巧</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-org6114e30">
+<h2 id="org6114e30"><span class="section-number-2">1</span> 前端开发技巧</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+<section id="slide-org12770ee">
+<h3 id="org12770ee"><span class="section-number-3">1.1</span> 编程技巧</h3>
+<ul>
+<li>数据与视图分离</li>
+<li>尽量使用全局数据(对越做越大且常迭代的部分)</li>
+<li>通用组件放在component里，页面在index里，这样让自己代码更清晰，简单的说就是改 component里面的要小心，因为很多地方有引用</li>
+<li>理解数据驱动视图，即便是1-2条数据，也用枚举循环，不直接写标签(如果你不是那么着急)</li>
+<li>使用配置的写法，不能像vue一样直接传递this上下文了，hook写法需要把props state属性分别一一传入</li>
+<li>组件封装 注意给形参缺省值/函数式编程 有入有出/形参设计最好预留一个参数做configuration，比如这里面可以添加callback在适当的时候调用一下/</li>
+<li>算法方面 尽量使用第三方库，lodash，一般来说，自己写的都不咋地</li>
+<li>慎用缓存</li>
+<li>感觉写着别扭请立即停止</li>
+
+</ul>
+
+</section>
+<section id="slide-orgd7072ca">
+<h3 id="orgd7072ca"><span class="section-number-3">1.2</span> 调试技巧</h3>
+<ul>
+<li>断点相关(xhr里获取异步代码堆栈)</li>
+<li>定位文件(vue devtool react devtool)</li>
+<li>二分调试</li>
+<li>css调试</li>
+<li><a href="https://github.com/liriliri/eruda">https://github.com/liriliri/eruda</a> 移动端调试神器</li>
+<li>了解vue react源码，可以避免一些错误</li>
+
+</ul>
+
+</section>
+<section id="slide-org6e7064a">
+<h3 id="org6e7064a"><span class="section-number-3">1.3</span> 搜索技巧</h3>
+<ul>
+<li>科学上网</li>
+<li>多习惯习惯英文</li>
+<li>不要使用疑问句  如何？怎么？行吗？</li>
+<li>访问相关社区</li>
+
+</ul>
+
+</section>
+<section id="slide-orgff13fa9">
+<h3 id="orgff13fa9"><span class="section-number-3">1.4</span> 与后端协调技巧</h3>
+<ul>
+<li>bug属于后端还是前端的定位</li>
+<li>前端改好|后端改好|前后端改都可以的</li>
+<li>自己也学习一下后端和数据库相关的知识，了解为什么后端改这个地方可能会比较麻烦或者根本改不了</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
