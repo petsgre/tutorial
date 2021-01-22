@@ -40,3 +40,5 @@ emacs待补充插件
 ~~5. emacs GUI打开 path问题~~ add-node-modules-path
 ~~6. 全局搜索 并且 ！！替换！！~~ 目前使用 git grep , ag ,fzf 全局搜索 
 	ivy-occur 全局替换
+
+master
