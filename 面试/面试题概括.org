@@ -1,0 +1,106 @@
+* 面试题概括
+
+** js
+
+   - js new一个对象的过程
+     
+     1. 创建一个空对象
+     2. 将此对象的__proto__属性指向原型对象
+     3. 执行对象中的语句
+     4. 返回this
+
+   - js基本数据类型
+     string number boolean null undefined symbol
+
+   - typeof 和 instanceof
+     typeof : string number boolean undefined function object
+     instanceof: 根据原型链网上寻找 更详细一点 例如寻找Array
+     
+   - 原型链继承
+     
+     每个构造函数都有个原型对象，Bar.prototype === 实例.__proto__
+     constructor 就是构造函数，构造函数的原型对象的constructor就是构造函数他本身 即:Bar <=> Bar.prototype.constructor
+     
+     #+begin_src js
+       function Bar (name, age) {
+	   this.name = name
+	   this.age = age
+	   this.fun = function(){console.log('abc')}
+       }
+       // 这样写每次都会在堆中开辟空间储存 fun这个函数，因为他是引用类型
+
+       Bar.prototype.fun = function(){console.log('abc')};
+       //如果把fun函数卸载 Bar这个构造函数的原型对象上，那么所有实例都可以调用这个函数，并且只开辟一次空间
+
+     #+end_src
+
+     #+begin_src js
+       function Father (name,age) {
+	   this.name = name
+	   this.age = age
+       }
+       Father.prototype.fun = function(){}
+       function Son(name, age){
+	   Father.apply(this,[...arguments])
+       }
+       Son.prototype = new Father() // 类似于用了深拷贝，让子构造函数原型指向一个新的父构造函数
+       Son.prototype.constructor = Son
+       var son = new Son('shaun',18)
+
+     #+end_src
+   - 闭包
+     一个函数调用了其他函数的内部变量，那么这个现象就叫闭包
+     #+begin_src js
+       function fun (){
+	   var num = 10
+	   function fn(){
+	       console.log(num)
+	   }
+       }
+     #+end_src
+   - 
+   - 
+   - 
+   - 
+   - 
+   - 
+   - 
+   - 
+   - 
+
+** 浏览器网络
+
+   - 缓存
+     强缓存（200），协商缓存,若资源是最新的，返回304
+
+     常见请求响应头：Expires Cache-control content-type access-control-allow-methods/origin
+
+     什么时候触发OPTIONS请求
+
+     非简单请（一般的get post为简单请求）求就会触发
+
+     有添加一些content-type的请求头的比如 applcation/json的请求就要预请求
+
+     URL 输入到渲染的过程:
+     1. DNS解析 找到服务器地址
+     2. 建立TCP连接 开始三次握手 发送SYN 接收ACK
+     3. 客户端请求资源，服务端响应请求
+     4. 渲染页面 建立dom树，获取css文件，建立cssdom,回流 重绘
+     5. 4次挥手断开TCP
+     
+     
+   - xss csrf
+
+     xss 是跨站脚本攻击，大多出现在表单提交里面，所以要对提交上的文字进行转义处理
+
+     csrf 跨站请求伪造，它劫持cookie 冒用cookie信息 伪造请求 ，解决办法：检验请求源 origin-header referer-header;请求携带Token验证;
+     
+   - 跨域解决方案
+
+     1. jsonp
+     2. cors 添加请求头源
+     3. nginx转发
+	
+   - 
+   - 
+
