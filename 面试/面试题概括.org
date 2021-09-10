@@ -1,6 +1,6 @@
 * 面试题概括
 
-** js
+** javascript
 
    - js new一个对象的过程
      
@@ -58,7 +58,12 @@
 	   }
        }
      #+end_src
-   - 
+   - 创建对象的几种方法
+     #+begin_src js
+       const obj = {name:123} // 对象字面量
+       let obj = new Object() // new的形式
+       let obj = Object.create({}) // 重复创建对象
+     #+end_src
    - 
    - 
    - 
