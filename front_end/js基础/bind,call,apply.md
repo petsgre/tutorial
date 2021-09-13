@@ -65,3 +65,26 @@ console.log(b.name) // bar
 Foo.call(this, name); 就是this指向Foo，即现在使用this，相当于就是在调用Foo
 
 所以即便Bar没有定义name，也会有name属性。
+
+# bind实现
+
+```
+Function.prototype.myBind = function () {
+  const that = this
+  const [context, ...args] = arguments
+  return function () {
+    that.call(context, ...args)
+  }
+}
+
+function bar() {
+  console.log(this)
+  console.log(arguments)
+}
+const obj = {
+  name: "zx",
+}
+const resBar = bar.myBind(obj, 1, 2)
+
+resBar()
+```
