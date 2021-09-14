@@ -88,3 +88,24 @@ const resBar = bar.myBind(obj, 1, 2)
 
 resBar()
 ```
+
+# 实现call
+
+```
+Function.prototype.myCall = function () {
+  const [o, ...args] = arguments
+  o.__fun = this
+  o.__fun(...args)
+  delete o.__fun
+}
+
+function bar() {
+  console.log(this)
+  console.log(arguments)
+}
+const obj = {
+  name: "zx",
+}
+bar.myCall(obj, 1, 2)
+
+```

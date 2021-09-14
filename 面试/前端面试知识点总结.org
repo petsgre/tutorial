@@ -31,6 +31,47 @@
      | \s    | 空格                   |
      |       |                        |
    - Event Loop
+   - map parseInt
+     #+begin_src js
+       ["1","2","3"].map(parseInt)
+       // [1,NaN,NaN]
+       // parseInt("1",0) 1
+       // parseInt("2",1) NaN
+       // parseInt("3",2) NaN 2进制中没有3
+     #+end_src
+   - 小数计算精度丢失问题
+     IEEE754标准 64位双精度
+     0.1 和 0.2转换成2进制都是无限循环的2进制
+     [[https://tva1.sinaimg.cn/large/008i3skNgy1gug7bjnb51j615o0ne78q02.jpg][小数点2进制转换]]
+   - 对调两个数值的值
+     1. 临时变量
+     2. [a,b] = [b,a]
+     3. 加减法
+        #+begin_src js
+          a = a + b
+          b = a - b
+          a = a - b
+        #+end_src
+        [[https://tva1.sinaimg.cn/large/008i3skNgy1gugobns5mzj616w0i80us02.jpg][图示]]
+     4. 按位异或
+        #+begin_src js
+          a = a ^ b
+          b = a ^ b
+          a = a ^ b
+        #+end_src
+        [[https://tva1.sinaimg.cn/large/008i3skNgy1gugog7dlioj618i0nmadr02.jpg][图示]]
+     5. 
+   - 
+   - 
+   - 
+   - 
+   - 
+   - 
+   - 
+   - 
+   - 
+   - 
+   - 
    - 
    - 
    - 
