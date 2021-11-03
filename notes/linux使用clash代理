@@ -1,0 +1,18 @@
+运行clash
+1. wget -O config.yaml https://example.com\&flag\=clash
+   下载订阅地址
+
+2. ./clash -d .
+   在当前目录下开启clash
+
+
+
+安装clash
+
+wget github.clash.gz文件 压缩文件
+
+gunzip clash.gz 解压文件
+
+
+终端使用代理:
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
